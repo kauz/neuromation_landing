@@ -1,32 +1,33 @@
 {
-  "name": "neuromation",
-  "version": "1.0.0",
-  "description": "Token-sale-ico.psd trial layout.",
-  "main": "dist/index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@bitbucket.org/kauzlein/neuromation.git"
-  },
-  "author": "Atyom Popov",
-  "license": "ISC",
-  "homepage": "https://bitbucket.org/kauzlein/neuromation#readme",
-  "devDependencies": {
-    "browser-sync": "^2.23.3",
-    "del": "^3.0.0",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.1.0",
-    "gulp-cache": "^1.0.2",
-    "gulp-cssnano": "^2.1.2",
-    "gulp-if": "^2.0.2",
-    "gulp-imagemin": "^4.1.0",
-    "gulp-sass": "^3.1.0",
-    "gulp-uglify": "^3.0.0",
-    "gulp-useref": "^3.1.4",
-    "run-sequence": "^2.2.1",
-    "sprity": "^1.0.8",
-    "sprity-sass": "^1.0.4"
-  }
+	"name": "neuromation",
+	"version": "1.0.0",
+	"description": "Token-sale-ico.psd trial layout.",
+	"main": "dist/index.html",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@bitbucket.org/kauzlein/neuromation.git"
+	},
+	"author": "Atyom Popov",
+	"license": "ISC",
+	"homepage": "https://bitbucket.org/kauzlein/neuromation#readme",
+	"devDependencies": {
+		"browser-sync": "^2.23.3",
+		"chart.js": "^2.7.1",
+		"del": "^3.0.0",
+		"gulp": "^3.9.1",
+		"gulp-autoprefixer": "^4.1.0",
+		"gulp-cache": "^1.0.2",
+		"gulp-cssnano": "^2.1.2",
+		"gulp-if": "^2.0.2",
+		"gulp-imagemin": "^4.1.0",
+		"gulp-sass": "^3.1.0",
+		"gulp-stylus": "^2.7.0",
+		"gulp-uglify": "^3.0.0",
+		"gulp-useref": "^3.1.4",
+		"gulp.spritesmith": "^6.9.0",
+		"run-sequence": "^2.2.1"
+	}
 }
