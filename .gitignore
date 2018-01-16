@@ -2,6 +2,5 @@
 /node_modules
 .idea
 .idea/*
-gulpfile.js
 npm-debug.log
 package-lock.json
