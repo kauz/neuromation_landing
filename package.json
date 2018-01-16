@@ -14,7 +14,7 @@
 	"license": "ISC",
 	"homepage": "https://bitbucket.org/kauzlein/neuromation#readme",
 	"devDependencies": {
-		"browser-sync": "^2.23.3",
+		"browser-sync": "^2.23.5",
 		"chart.js": "^2.7.1",
 		"del": "^3.0.0",
 		"gulp": "^3.9.1",
