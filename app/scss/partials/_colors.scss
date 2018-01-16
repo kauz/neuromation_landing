@@ -1,0 +1,36 @@
+$black: #393939;
+$white: #fff;
+$cyan: #49cef2;
+$greenBlue: #064355;
+$lightBlue: #dbf5fc;
+$title: #062769;
+$subTitle: #26a9cc;
+$headBlack: #252525;
+
+.black_c {color:$black}
+.white_c {color:$white}
+.greenBlue_c {color: $greenBlue}
+.cyan_c {color:$cyan}
+.title {color:$title}
+.subTitle_c {color: $subTitle}
+.headBlack_c {color:$headBlack}
+
+.black_b {background-color:$black}
+.white_b {background-color:$white}
+.greenBlue_b {background-color:$greenBlue}
+.lightBlue_b {background-color:$lightBlue}
+.cyan_b {background-color:$cyan}
+.subTitle_b {background-color:$subTitle}
+
+
+
+
+$circle_1: #02bef6;
+$circle_2: #069ed2;
+$circle_3: #0787b9;
+$circle_4: #0a73a2;
+
+.circle_1 {background-color:$circle_1;}
+.circle_2 {background-color:$circle_2;}
+.circle_3 {background-color:$circle_3;}
+.circle_4 {background-color:$circle_4;}

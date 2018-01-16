@@ -1,0 +1,70 @@
+@charset "UTF-8";
+// =============================================================================
+// String Replace
+// =============================================================================
+
+@function str-replace($string, $search, $replace: "") {
+	$index: str-index($string, $search);
+
+	@if $index {
+		@return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+	}
+
+	@return $string;
+}
+
+// =============================================================================
+// Font Face
+// =============================================================================
+
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+	$src: null;
+
+	$extmods: (
+		eot: "?",
+		svg: "#" + str-replace($name, " ", "_")
+	);
+
+	$formats: (
+		otf: "opentype",
+		ttf: "truetype",
+	);
+
+	@each $ext in $exts {
+		$extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+		$format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+		$src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+	}
+
+	@font-face {
+		font-family: quote($name);
+		font-style: $style;
+		font-weight: $weight;
+		src: $src;
+	}
+}
+@include font-face("Roboto Thin", "../fonts/roboto/Roboto-Thin", normal, normal);
+@include font-face("Roboto Light", "../fonts/roboto/Roboto-Light", normal, normal);
+@include font-face("Roboto Regular", "../fonts/roboto/Roboto-Regular", normal, normal);
+@include font-face("Roboto Medium", "../fonts/roboto/Roboto-Medium", normal, normal);
+@include font-face("Roboto Bold", "../fonts/roboto/Roboto-Bold", normal, normal);
+@include font-face("Roboto Black", "../fonts/roboto/Roboto-Black", normal, normal);
+
+.roboto_thin {
+	font-family: "Roboto Thin";
+}
+.roboto_light {
+	font-family: "Roboto Light";
+}
+.roboto_regular {
+	font-family: "Roboto Regular";
+}
+.roboto_medium {
+	font-family: "Roboto Medium";
+}
+.roboto_bold {
+	font-family: "Roboto Bold";
+}
+.roboto_black {
+	font-family: "Roboto Black";
+}

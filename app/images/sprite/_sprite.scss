@@ -1,0 +1,442 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$192px-i-t-logo-svg-name: '192px-IT_logo.svg';
+$192px-i-t-logo-svg-x: 1954px;
+$192px-i-t-logo-svg-y: 0px;
+$192px-i-t-logo-svg-offset-x: -1954px;
+$192px-i-t-logo-svg-offset-y: 0px;
+$192px-i-t-logo-svg-width: 192px;
+$192px-i-t-logo-svg-height: 275px;
+$192px-i-t-logo-svg-total-width: 2436px;
+$192px-i-t-logo-svg-total-height: 2115px;
+$192px-i-t-logo-svg-image: 'sprite.png';
+$192px-i-t-logo-svg: (1954px, 0px, -1954px, 0px, 192px, 275px, 2436px, 2115px, 'sprite.png', '192px-IT_logo.svg', );
+$272x90mag-name: '272x90mag';
+$272x90mag-x: 2156px;
+$272x90mag-y: 304px;
+$272x90mag-offset-x: -2156px;
+$272x90mag-offset-y: -304px;
+$272x90mag-width: 272px;
+$272x90mag-height: 90px;
+$272x90mag-total-width: 2436px;
+$272x90mag-total-height: 2115px;
+$272x90mag-image: 'sprite.png';
+$272x90mag: (2156px, 304px, -2156px, -304px, 272px, 90px, 2436px, 2115px, 'sprite.png', '272x90mag', );
+$300px-c-f-o-russia-name: '300px-CFO-Russia_ЛОГО';
+$300px-c-f-o-russia-x: 316px;
+$300px-c-f-o-russia-y: 1950px;
+$300px-c-f-o-russia-offset-x: -316px;
+$300px-c-f-o-russia-offset-y: -1950px;
+$300px-c-f-o-russia-width: 300px;
+$300px-c-f-o-russia-height: 164px;
+$300px-c-f-o-russia-total-width: 2436px;
+$300px-c-f-o-russia-total-height: 2115px;
+$300px-c-f-o-russia-image: 'sprite.png';
+$300px-c-f-o-russia-: (316px, 1950px, -316px, -1950px, 300px, 164px, 2436px, 2115px, 'sprite.png', '300px-CFO-Russia_ЛОГО', );
+$-canvas-name: 'Canvas';
+$-canvas-x: 904px;
+$-canvas-y: 1121px;
+$-canvas-offset-x: -904px;
+$-canvas-offset-y: -1121px;
+$-canvas-width: 300px;
+$-canvas-height: 72px;
+$-canvas-total-width: 2436px;
+$-canvas-total-height: 2115px;
+$-canvas-image: 'sprite.png';
+$-canvas: (904px, 1121px, -904px, -1121px, 300px, 72px, 2436px, 2115px, 'sprite.png', 'Canvas', );
+$-crowdfund-insider-logo-name: 'CrowdfundInsiderLogo';
+$-crowdfund-insider-logo-x: 0px;
+$-crowdfund-insider-logo-y: 770px;
+$-crowdfund-insider-logo-offset-x: 0px;
+$-crowdfund-insider-logo-offset-y: -770px;
+$-crowdfund-insider-logo-width: 1000px;
+$-crowdfund-insider-logo-height: 202px;
+$-crowdfund-insider-logo-total-width: 2436px;
+$-crowdfund-insider-logo-total-height: 2115px;
+$-crowdfund-insider-logo-image: 'sprite.png';
+$-crowdfund-insider-logo: (0px, 770px, 0px, -770px, 1000px, 202px, 2436px, 2115px, 'sprite.png', 'CrowdfundInsiderLogo', );
+$-i-c-o-daily-logo-black-2-name: 'ICO-Daily-logo-Black-2';
+$-i-c-o-daily-logo-black-2-x: 0px;
+$-i-c-o-daily-logo-black-2-y: 510px;
+$-i-c-o-daily-logo-black-2-offset-x: 0px;
+$-i-c-o-daily-logo-black-2-offset-y: -510px;
+$-i-c-o-daily-logo-black-2-width: 1000px;
+$-i-c-o-daily-logo-black-2-height: 250px;
+$-i-c-o-daily-logo-black-2-total-width: 2436px;
+$-i-c-o-daily-logo-black-2-total-height: 2115px;
+$-i-c-o-daily-logo-black-2-image: 'sprite.png';
+$-i-c-o-daily-logo-black-2: (0px, 510px, 0px, -510px, 1000px, 250px, 2436px, 2115px, 'sprite.png', 'ICO-Daily-logo-Black-2', );
+$-t-f-beta-name: 'TF-Beta';
+$-t-f-beta-x: 1414px;
+$-t-f-beta-y: 982px;
+$-t-f-beta-offset-x: -1414px;
+$-t-f-beta-offset-y: -982px;
+$-t-f-beta-width: 470px;
+$-t-f-beta-height: 125px;
+$-t-f-beta-total-width: 2436px;
+$-t-f-beta-total-height: 2115px;
+$-t-f-beta-image: 'sprite.png';
+$-t-f-beta: (1414px, 982px, -1414px, -982px, 470px, 125px, 2436px, 2115px, 'sprite.png', 'TF-Beta', );
+$-zap2it-logo-name: 'Zap2it_logo';
+$-zap2it-logo-x: 467px;
+$-zap2it-logo-y: 982px;
+$-zap2it-logo-offset-x: -467px;
+$-zap2it-logo-offset-y: -982px;
+$-zap2it-logo-width: 427px;
+$-zap2it-logo-height: 223px;
+$-zap2it-logo-total-width: 2436px;
+$-zap2it-logo-total-height: 2115px;
+$-zap2it-logo-image: 'sprite.png';
+$-zap2it-logo: (467px, 982px, -467px, -982px, 427px, 223px, 2436px, 2115px, 'sprite.png', 'Zap2it_logo', );
+$bankless-times-name: 'bankless_times';
+$bankless-times-x: 0px;
+$bankless-times-y: 1781px;
+$bankless-times-offset-x: 0px;
+$bankless-times-offset-y: -1781px;
+$bankless-times-width: 318px;
+$bankless-times-height: 159px;
+$bankless-times-total-width: 2436px;
+$bankless-times-total-height: 2115px;
+$bankless-times-image: 'sprite.png';
+$bankless-times: (0px, 1781px, 0px, -1781px, 318px, 159px, 2436px, 2115px, 'sprite.png', 'bankless_times', );
+$bitcoin-market-insider-name: 'bitcoin-market-insider';
+$bitcoin-market-insider-x: 720px;
+$bitcoin-market-insider-y: 1381px;
+$bitcoin-market-insider-offset-x: -720px;
+$bitcoin-market-insider-offset-y: -1381px;
+$bitcoin-market-insider-width: 300px;
+$bitcoin-market-insider-height: 180px;
+$bitcoin-market-insider-total-width: 2436px;
+$bitcoin-market-insider-total-height: 2115px;
+$bitcoin-market-insider-image: 'sprite.png';
+$bitcoin-market-insider: (720px, 1381px, -720px, -1381px, 300px, 180px, 2436px, 2115px, 'sprite.png', 'bitcoin-market-insider', );
+$bitstorm-logo-name: 'bitstorm_logo';
+$bitstorm-logo-x: 2156px;
+$bitstorm-logo-y: 571px;
+$bitstorm-logo-offset-x: -2156px;
+$bitstorm-logo-offset-y: -571px;
+$bitstorm-logo-width: 250px;
+$bitstorm-logo-height: 79px;
+$bitstorm-logo-total-width: 2436px;
+$bitstorm-logo-total-height: 2115px;
+$bitstorm-logo-image: 'sprite.png';
+$bitstorm-logo: (2156px, 571px, -2156px, -571px, 250px, 79px, 2436px, 2115px, 'sprite.png', 'bitstorm_logo', );
+$blockchainnews-testimonial-logo-name: 'blockchainnews-testimonial-logo';
+$blockchainnews-testimonial-logo-x: 1010px;
+$blockchainnews-testimonial-logo-y: 770px;
+$blockchainnews-testimonial-logo-offset-x: -1010px;
+$blockchainnews-testimonial-logo-offset-y: -770px;
+$blockchainnews-testimonial-logo-width: 600px;
+$blockchainnews-testimonial-logo-height: 200px;
+$blockchainnews-testimonial-logo-total-width: 2436px;
+$blockchainnews-testimonial-logo-total-height: 2115px;
+$blockchainnews-testimonial-logo-image: 'sprite.png';
+$blockchainnews-testimonial-logo: (1010px, 770px, -1010px, -770px, 600px, 200px, 2436px, 2115px, 'sprite.png', 'blockchainnews-testimonial-logo', );
+$blocktribune-name: 'blocktribune';
+$blocktribune-x: 920px;
+$blocktribune-y: 348px;
+$blocktribune-offset-x: -920px;
+$blocktribune-offset-y: -348px;
+$blocktribune-width: 600px;
+$blocktribune-height: 135px;
+$blocktribune-total-width: 2436px;
+$blocktribune-total-height: 2115px;
+$blocktribune-image: 'sprite.png';
+$blocktribune: (920px, 348px, -920px, -348px, 600px, 135px, 2436px, 2115px, 'sprite.png', 'blocktribune', );
+$btcoin-info-name: 'btcoin-info';
+$btcoin-info-x: 467px;
+$btcoin-info-y: 1215px;
+$btcoin-info-offset-x: -467px;
+$btcoin-info-offset-y: -1215px;
+$btcoin-info-width: 586px;
+$btcoin-info-height: 100px;
+$btcoin-info-total-width: 2436px;
+$btcoin-info-total-height: 2115px;
+$btcoin-info-image: 'sprite.png';
+$btcoin-info: (467px, 1215px, -467px, -1215px, 586px, 100px, 2436px, 2115px, 'sprite.png', 'btcoin-info', );
+$coincrispy-name: 'coincrispy';
+$coincrispy-x: 2156px;
+$coincrispy-y: 404px;
+$coincrispy-offset-x: -2156px;
+$coincrispy-offset-y: -404px;
+$coincrispy-width: 151px;
+$coincrispy-height: 157px;
+$coincrispy-total-width: 2436px;
+$coincrispy-total-height: 2115px;
+$coincrispy-image: 'sprite.png';
+$coincrispy: (2156px, 404px, -2156px, -404px, 151px, 157px, 2436px, 2115px, 'sprite.png', 'coincrispy', );
+$crypto-name: 'crypto';
+$crypto-x: 2156px;
+$crypto-y: 180px;
+$crypto-offset-x: -2156px;
+$crypto-offset-y: -180px;
+$crypto-width: 263px;
+$crypto-height: 114px;
+$crypto-total-width: 2436px;
+$crypto-total-height: 2115px;
+$crypto-image: 'sprite.png';
+$crypto: (2156px, 180px, -2156px, -180px, 263px, 114px, 2436px, 2115px, 'sprite.png', 'crypto', );
+$digital-journal-name: 'digital_journal';
+$digital-journal-x: 1010px;
+$digital-journal-y: 510px;
+$digital-journal-offset-x: -1010px;
+$digital-journal-offset-y: -510px;
+$digital-journal-width: 650px;
+$digital-journal-height: 200px;
+$digital-journal-total-width: 2436px;
+$digital-journal-total-height: 2115px;
+$digital-journal-image: 'sprite.png';
+$digital-journal: (1010px, 510px, -1010px, -510px, 650px, 200px, 2436px, 2115px, 'sprite.png', 'digital_journal', );
+$e27-name: 'e27';
+$e27-x: 0px;
+$e27-y: 1950px;
+$e27-offset-x: 0px;
+$e27-offset-y: -1950px;
+$e27-width: 306px;
+$e27-height: 165px;
+$e27-total-width: 2436px;
+$e27-total-height: 2115px;
+$e27-image: 'sprite.png';
+$e27: (0px, 1950px, 0px, -1950px, 306px, 165px, 2436px, 2115px, 'sprite.png', 'e27', );
+$evercoin-name: 'evercoin';
+$evercoin-x: 0px;
+$evercoin-y: 0px;
+$evercoin-offset-x: 0px;
+$evercoin-offset-y: 0px;
+$evercoin-width: 910px;
+$evercoin-height: 500px;
+$evercoin-total-width: 2436px;
+$evercoin-total-height: 2115px;
+$evercoin-image: 'sprite.png';
+$evercoin: (0px, 0px, 0px, 0px, 910px, 500px, 2436px, 2115px, 'sprite.png', 'evercoin', );
+$forklog-name: 'forklog';
+$forklog-x: 2156px;
+$forklog-y: 0px;
+$forklog-offset-x: -2156px;
+$forklog-offset-y: 0px;
+$forklog-width: 280px;
+$forklog-height: 170px;
+$forklog-total-width: 2436px;
+$forklog-total-height: 2115px;
+$forklog-image: 'sprite.png';
+$forklog: (2156px, 0px, -2156px, 0px, 280px, 170px, 2436px, 2115px, 'sprite.png', 'forklog', );
+$h-name: 'h+';
+$h-x: 410px;
+$h-y: 1381px;
+$h-offset-x: -410px;
+$h-offset-y: -1381px;
+$h-width: 300px;
+$h-height: 244px;
+$h-total-width: 2436px;
+$h-total-height: 2115px;
+$h-image: 'sprite.png';
+$h-: (410px, 1381px, -410px, -1381px, 300px, 244px, 2436px, 2115px, 'sprite.png', 'h+', );
+$hacked-name: 'hacked';
+$hacked-x: 1530px;
+$hacked-y: 348px;
+$hacked-offset-x: -1530px;
+$hacked-offset-y: -348px;
+$hacked-width: 400px;
+$hacked-height: 69px;
+$hacked-total-width: 2436px;
+$hacked-total-height: 2115px;
+$hacked-image: 'sprite.png';
+$hacked: (1530px, 348px, -1530px, -348px, 400px, 69px, 2436px, 2115px, 'sprite.png', 'hacked', );
+$ico-bench-name: 'ico-bench';
+$ico-bench-x: 1620px;
+$ico-bench-y: 770px;
+$ico-bench-offset-x: -1620px;
+$ico-bench-offset-y: -770px;
+$ico-bench-width: 300px;
+$ico-bench-height: 180px;
+$ico-bench-total-width: 2436px;
+$ico-bench-total-height: 2115px;
+$ico-bench-image: 'sprite.png';
+$ico-bench: (1620px, 770px, -1620px, -770px, 300px, 180px, 2436px, 2115px, 'sprite.png', 'ico-bench', );
+$icorating-name: 'icorating';
+$icorating-x: 0px;
+$icorating-y: 1381px;
+$icorating-offset-x: 0px;
+$icorating-offset-y: -1381px;
+$icorating-width: 400px;
+$icorating-height: 390px;
+$icorating-total-width: 2436px;
+$icorating-total-height: 2115px;
+$icorating-image: 'sprite.png';
+$icorating: (0px, 1381px, 0px, -1381px, 400px, 390px, 2436px, 2115px, 'sprite.png', 'icorating', );
+$insite-name: 'insite';
+$insite-x: 410px;
+$insite-y: 1635px;
+$insite-offset-x: -410px;
+$insite-offset-y: -1635px;
+$insite-width: 482px;
+$insite-height: 104px;
+$insite-total-width: 2436px;
+$insite-total-height: 2115px;
+$insite-image: 'sprite.png';
+$insite: (410px, 1635px, -410px, -1635px, 482px, 104px, 2436px, 2115px, 'sprite.png', 'insite', );
+$liga-300x150-name: 'liga-300x150';
+$liga-300x150-x: 328px;
+$liga-300x150-y: 1781px;
+$liga-300x150-offset-x: -328px;
+$liga-300x150-offset-y: -1781px;
+$liga-300x150-width: 300px;
+$liga-300x150-height: 150px;
+$liga-300x150-total-width: 2436px;
+$liga-300x150-total-height: 2115px;
+$liga-300x150-image: 'sprite.png';
+$liga-300x150: (328px, 1781px, -328px, -1781px, 300px, 150px, 2436px, 2115px, 'sprite.png', 'liga-300x150', );
+$logo-sputnik-name: 'logo-sputnik';
+$logo-sputnik-x: 920px;
+$logo-sputnik-y: 0px;
+$logo-sputnik-offset-x: -920px;
+$logo-sputnik-offset-y: 0px;
+$logo-sputnik-width: 1024px;
+$logo-sputnik-height: 338px;
+$logo-sputnik-total-width: 2436px;
+$logo-sputnik-total-height: 2115px;
+$logo-sputnik-image: 'sprite.png';
+$logo-sputnik: (920px, 0px, -920px, 0px, 1024px, 338px, 2436px, 2115px, 'sprite.png', 'logo-sputnik', );
+$logo-name: 'logo';
+$logo-x: 0px;
+$logo-y: 982px;
+$logo-offset-x: 0px;
+$logo-offset-y: -982px;
+$logo-width: 457px;
+$logo-height: 389px;
+$logo-total-width: 2436px;
+$logo-total-height: 2115px;
+$logo-image: 'sprite.png';
+$logo: (0px, 982px, 0px, -982px, 457px, 389px, 2436px, 2115px, 'sprite.png', 'logo', );
+$molnero-name: 'molnero';
+$molnero-x: 1063px;
+$molnero-y: 1215px;
+$molnero-offset-x: -1063px;
+$molnero-offset-y: -1215px;
+$molnero-width: 300px;
+$molnero-height: 89px;
+$molnero-total-width: 2436px;
+$molnero-total-height: 2115px;
+$molnero-image: 'sprite.png';
+$molnero: (1063px, 1215px, -1063px, -1215px, 300px, 89px, 2436px, 2115px, 'sprite.png', 'molnero', );
+$nextworld-name: 'nextworld';
+$nextworld-x: 1030px;
+$nextworld-y: 1381px;
+$nextworld-offset-x: -1030px;
+$nextworld-offset-y: -1381px;
+$nextworld-width: 491px;
+$nextworld-height: 102px;
+$nextworld-total-width: 2436px;
+$nextworld-total-height: 2115px;
+$nextworld-image: 'sprite.png';
+$nextworld: (1030px, 1381px, -1030px, -1381px, 491px, 102px, 2436px, 2115px, 'sprite.png', 'nextworld', );
+$orwell-name: 'orwell';
+$orwell-x: 904px;
+$orwell-y: 982px;
+$orwell-offset-x: -904px;
+$orwell-offset-y: -982px;
+$orwell-width: 500px;
+$orwell-height: 129px;
+$orwell-total-width: 2436px;
+$orwell-total-height: 2115px;
+$orwell-image: 'sprite.png';
+$orwell: (904px, 982px, -904px, -982px, 500px, 129px, 2436px, 2115px, 'sprite.png', 'orwell', );
+$tad-name: 'tad';
+$tad-x: 2156px;
+$tad-y: 660px;
+$tad-offset-x: -2156px;
+$tad-offset-y: -660px;
+$tad-width: 180px;
+$tad-height: 110px;
+$tad-total-width: 2436px;
+$tad-total-height: 2115px;
+$tad-image: 'sprite.png';
+$tad: (2156px, 660px, -2156px, -660px, 180px, 110px, 2436px, 2115px, 'sprite.png', 'tad', );
+$trustnodes-name: 'trustnodes';
+$trustnodes-x: 2156px;
+$trustnodes-y: 780px;
+$trustnodes-offset-x: -2156px;
+$trustnodes-offset-y: -780px;
+$trustnodes-width: 193px;
+$trustnodes-height: 34px;
+$trustnodes-total-width: 2436px;
+$trustnodes-total-height: 2115px;
+$trustnodes-image: 'sprite.png';
+$trustnodes: (2156px, 780px, -2156px, -780px, 193px, 34px, 2436px, 2115px, 'sprite.png', 'trustnodes', );
+$spritesheet-width: 2436px;
+$spritesheet-height: 2115px;
+$spritesheet-image: 'sprite.png';
+$spritesheet-sprites: ($192px-i-t-logo-svg, $272x90mag, $300px-c-f-o-russia-, $-canvas, $-crowdfund-insider-logo, $-i-c-o-daily-logo-black-2, $-t-f-beta, $-zap2it-logo, $bankless-times, $bitcoin-market-insider, $bitstorm-logo, $blockchainnews-testimonial-logo, $blocktribune, $btcoin-info, $coincrispy, $crypto, $digital-journal, $e27, $evercoin, $forklog, $h-, $hacked, $ico-bench, $icorating, $insite, $liga-300x150, $logo-sputnik, $logo, $molnero, $nextworld, $orwell, $tad, $trustnodes, );
+$spritesheet: (2436px, 2115px, 'sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
