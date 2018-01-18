@@ -11,6 +11,38 @@
   .head__content {
     flex-flow: row nowrap;
     justify-content: space-between; }
+  .timing {
+    flex-flow: row nowrap;
+    align-items: flex-start; }
+    .timing:before {
+      top: 0;
+      left: 0;
+      height: auto;
+      width: 100%;
+      border-left: 0;
+      border-bottom: 1px dashed #26a9cc; }
+    .timing .timing__node {
+      margin: 20px 60px; }
+      .timing .timing__node:nth-child(1):before, .timing .timing__node:nth-child(2):before {
+        left: 0;
+        top: -38px; }
+      .timing .timing__node:nth-child(1):after, .timing .timing__node:nth-child(2):after {
+        left: 3px;
+        top: -35px; }
+      .timing .timing__node:first-child {
+        margin-top: 20px;
+        margin-left: 0; }
+      .timing .timing__node:last-child {
+        margin-bottom: 20px;
+        margin-right: 0; }
+    .timing #tm_last:before {
+      left: initial;
+      right: 0;
+      top: -38px; }
+    .timing #tm_last:after {
+      left: initial;
+      right: 3px;
+      top: -35px; }
   .token__details {
     display: flex;
     flex-flow: row wrap;
