@@ -462,6 +462,8 @@
 <script src="js/Chart.bundle.js"></script>
 <!-- endbuild -->
 <script>
+    Chart.defaults.global.responsive = true;
+
     var ctx = document.getElementById("barChart").getContext('2d');
     var cty = document.getElementById("doughnutChart").getContext('2d');
     var ctw = document.getElementById("secondDoughnutChart").getContext('2d');
@@ -495,7 +497,6 @@
                 }]
         },
         options: {
-            responsive: true,
             labels: {
                 defaultFontFamily: "Roboto"
             },
