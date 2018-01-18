@@ -406,38 +406,31 @@ h2.subtitle {
   }
 }
 
-.sub-goals {
-  align-self: flex-start;
-  color: #401111;
+.token__distribution, .proceeds__distribution {
+  @extend .relative;
 }
-.goals_eth {
-  @extend .flex,
-          .flex-row,
-          .justify-start;
-  max-width: 600px;
-  flex-wrap: nowrap;
+
+.donut_path {
+  display: none;
 }
-.eth {
-  flex-basis: 40%;
-  &:first-child {
-    align-self: flex-end;
-  }
-}
+
+//GOALS
+
 .eth_1 {@extend .h_indent; color: #02bef6}
 .eth_2 {@extend .h_indent; color: #069ed2}
 .eth_3 {@extend .h_indent; color: #0787b9}
 .eth_4 {@extend .h_indent; color: #0a73a2}
 
-.token__distribution, .proceeds__distribution {
-  @extend .relative;
-}
-#doughnutChart {
-}
-.donut_path {
-  display: none;
+.bagel {
+  @extend .h_indent;
+  .inner_circle_n {
+    padding: 20px 0;
+    width: 100%;
+  }
 }
 
 
+//NEUROMATION ROADMAP
 .roadmap {
   @extend .flex,
           .flex-column;
@@ -463,6 +456,8 @@ h2.subtitle {
     height: 24px;
   }
 }
+
+//FOOTER
 footer {
   width: 100%;
   background: #023f50;

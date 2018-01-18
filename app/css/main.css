@@ -375,13 +375,13 @@ body {
 .dashed_line, nav.--open li:before {
   border-bottom: 1px dashed #26a9cc; }
 
-.flex, .navigation__line, .head__content, .timing, .goals_eth, .roadmap, .roadmap_wrapper {
+.flex, .navigation__line, .head__content, .timing, .roadmap, .roadmap_wrapper {
   display: flex; }
 
 .flex-column, .navigation__line, .head__content, .roadmap {
   flex-flow: column nowrap; }
 
-.flex-row, .timing, .goals_eth, .roadmap_wrapper {
+.flex-row, .timing, .roadmap_wrapper {
   flex-flow: row wrap; }
 
 .justify-center {
@@ -390,7 +390,7 @@ body {
 .justify-between {
   justify-content: space-between; }
 
-.justify-start, .goals_eth {
+.justify-start {
   justify-content: flex-start; }
 
 .justify-end {
@@ -423,7 +423,7 @@ body {
 .f_super {
   font-size: 5em; }
 
-.h_indent, nav.--open li:before, .form-text, .quote_author, .quote_author a, .eth_1, .eth_2, .eth_3, .eth_4 {
+.h_indent, nav.--open li:before, .form-text, .quote_author, .quote_author a, .eth_1, .eth_2, .eth_3, .eth_4, .bagel {
   margin: 20px 0; }
 
 .inline_b {
@@ -747,18 +747,8 @@ h2.subtitle {
   .token_rect:last-child {
     text-align: center; }
 
-.sub-goals {
-  align-self: flex-start;
-  color: #401111; }
-
-.goals_eth {
-  max-width: 600px;
-  flex-wrap: nowrap; }
-
-.eth {
-  flex-basis: 40%; }
-  .eth:first-child {
-    align-self: flex-end; }
+.donut_path {
+  display: none; }
 
 .eth_1 {
   color: #02bef6; }
@@ -772,8 +762,9 @@ h2.subtitle {
 .eth_4 {
   color: #0a73a2; }
 
-.donut_path {
-  display: none; }
+.bagel .inner_circle_n {
+  padding: 20px 0;
+  width: 100%; }
 
 .roadmap_wrapper {
   margin: 30px auto;
