@@ -16,49 +16,6 @@
     flex-flow: row nowrap;
     justify-content: space-between;
   }
-  .ribbon2 {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    width: 140px;
-    height: 168px;
-    font-size: 34px;
-    position: absolute;
-    top: 0;
-    left: -18%;
-    background: #1497a3;
-    z-index: 2;
-    div.roboto_bold {
-      font-size:61px;
-      z-index: 3;
-    }
-  }
-  .ribbon2:before, .ribbon2:after {
-    content: "";
-    position: absolute;
-  }
-  .ribbon2:before {
-    height: 0;
-    width: 0;
-    left: 0;
-    bottom: -20px;
-    border-top: 20px solid #08737f;
-    border-left: 32px solid transparent;
-    z-index: 1;
-  }
-  .ribbon2:after {
-    content: "";
-    position: absolute;
-    height: 0;
-    width: 0;
-    bottom: 0;
-    right: -0.59em;
-    border-bottom: 84px solid #1497a3;
-    border-top: 84px solid #1497a3;
-    border-right: 20px solid transparent;
-    z-index: 1;
-  }
 }
 @media (min-width: 1024px) {
   body {
@@ -76,6 +33,31 @@
     width: 900px;
     overflow: hidden;
     z-index: 0;
+  }
+  .distribution__descr {
+    position: absolute;
+    &:before {
+      content: none;
+    }
+  }
+  .chart1__helpers {
+    div {
+      display: block;
+      &:nth-child(2) {top: -10px; left: -240px}
+      &:nth-child(3) {top: -15px; right: -260px}
+      &:nth-child(4) {top: 80px; right: -260px}
+      &:nth-child(5) {top: 175px; right: -260px;}
+      &:nth-child(6) {bottom: 92px; right: -260px}
+    }
+  }
+  .chart2__helpers {
+    div {
+      display: block;
+      &:nth-child(2) {bottom: 70px; right: -260px}
+      &:nth-child(3) {bottom: 70px; left: -350px}
+      &:nth-child(4) {top: 30px; left: -260px}
+      &:nth-child(5) {top: 70px; right: -260px}
+    }
   }
   .bagel {
     margin: 0;
@@ -286,6 +268,49 @@
     font-size:initial;
   }
   .logo {
-    margin: 0;
+    margin: 2px;
+  }
+  .ribbon2 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 168px;
+    font-size: 34px;
+    position: absolute;
+    top: 0;
+    left: -18%;
+    background: #1497a3;
+    z-index: 2;
+    div.roboto_bold {
+      font-size:61px;
+      z-index: 3;
+    }
+  }
+  .ribbon2:before, .ribbon2:after {
+    content: "";
+    position: absolute;
+  }
+  .ribbon2:before {
+    height: 0;
+    width: 0;
+    left: 0;
+    bottom: -20px;
+    border-top: 20px solid #08737f;
+    border-left: 32px solid transparent;
+    z-index: 1;
+  }
+  .ribbon2:after {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    bottom: 0;
+    right: -0.59em;
+    border-bottom: 84px solid #1497a3;
+    border-top: 84px solid #1497a3;
+    border-right: 20px solid transparent;
+    z-index: 1;
   }
 }

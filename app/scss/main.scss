@@ -406,12 +406,49 @@ h2.subtitle {
   }
 }
 
-.token__distribution, .proceeds__distribution {
+.token__distribution, .proceeds__distribution, .timing__bonus {
   @extend .relative;
+}
+.bar_helper {
+  @extend .roboto_medium,
+          .blue_c5;
+  position: absolute;
+  div {
+    @extend .roboto_bold,
+            .f_medium;
+  }
+  &:nth-child(1) {top: -20px; left: 44px}
+  &:nth-child(2) {top: 95px; left: 150px}
+  &:nth-child(3) {top: 210px; left: 255px}
 }
 
 .donut_path {
   display: none;
+}
+
+.distribution__descr {
+  @extend .f_regular;
+&:before {
+  content: "⯁";
+  padding-right: 10px;
+}
+}
+.chart1__helpers {
+  div {
+    &:nth-child(2):before {@extend .blue_c5}
+    &:nth-child(3):before {@extend .blue_c1}
+    &:nth-child(4):before {@extend .blue_c2}
+    &:nth-child(5):before {@extend .blue_c3}
+    &:nth-child(6):before {@extend .blue_c4}
+  }
+}
+.chart2__helpers {
+  div {
+    &:nth-child(2):before {@extend .blue_c6}
+    &:nth-child(3):before {@extend .blue_c5}
+    &:nth-child(4):before {@extend .blue_c5}
+    &:nth-child(5):before {@extend .blue_c1}
+  }
 }
 
 //GOALS

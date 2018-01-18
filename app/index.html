@@ -227,8 +227,9 @@
             </div>
         </div>
         <h2 class="uppercase subtitle subTitle_c">Timing bonus:</h2>
-        <div class="block4_step" style="max-width: 500px">
+        <div class="block4_step timing__bonus" style="max-width: 500px">
             <canvas id="barChart" width="400" height="400"></canvas>
+            <div id="js-legend_bar" class="chart-legend"></div>
         </div>
         <h2 class="uppercase subtitle subTitle_c">Token Details:</h2>
         <div class="block4_step flex flex-row justify-between">
@@ -461,6 +462,7 @@
         <li>Theme Fusion</li>
     </ul>
 </footer>
+
 <!--build:js js/main.min.js -->
 <script src="js/main.js"></script>
 <script src="js/Chart.bundle.js"></script>
@@ -498,10 +500,10 @@
                     borderWidth: 1
                 }]
         },
-        responsive: true,
         options: {
+            responsive: true,
             labels: {
-                defaultFontFamily: "Roboto Light"
+                defaultFontFamily: "Roboto"
             },
             scales: {
                 yAxes: [{
@@ -516,10 +518,12 @@
                     }
                 }],
                 xAxes: [{
+                    categoryPercentage: 1,
+                    barThickness : 100,
                     ticks: {
                         beginAtZero: true,
                         display: true,
-                        fontFamily: "Roboto Bold",
+                        fontFamily: "Roboto",
                         fontSize: 18
                     },
                     gridLines: {
@@ -531,6 +535,9 @@
             },
             legend: {
                 display: false
+            },
+            legendCallback: function () {
+                return "<div class=\"bar_helper\"><div>+15%</div> in neurotokens</div> <div class=\"bar_helper\"><div>+10%</div> in neurotokens</div> <div class=\"bar_helper\"><div>+5%</div> in neurotokens</div>"
             }
         }
     });
@@ -550,8 +557,8 @@
             legend: {
                 display: false
             },
-            legendCallback: function(chart) {
-                return "<div class=\"distribution chart1__helpers\"> <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"donut_path path_1\" viewBox=\"0 0 9253 3657\"> <defs id=\"defs4\"><style id=\"style6\"> .chart1__helpers .str0{stroke:#707070;stroke-width:9.5502} .chart1__helpers .fil0{fill:none} .chart1__helpers .fil1{fill:#02bff6} .chart1__helpers .fil3{fill:#0992db} .chart1__helpers .fil4{fill:#114d8d} .chart1__helpers .fil2{fill:#4fd6ff} </style></defs> <g id=\"Layer_x0020_1\"><g id=\"_1504955520\"><path class=\"fil0 str0\" id=\"polyline11\" d=\"M5590 3249l188 247h3456\"></path><path class=\"fil0 str0\" id=\"polyline13\" d=\"M5575 1584l188-246h3456\"></path><path class=\"fil0 str0\" id=\"polyline15\" d=\"M5575 2547l188-247h3456\"></path><path class=\"fil0 str0\" id=\"polyline17\" d=\"M5161 1148l602-774h3456\"></path><path class=\"fil0 str0\" id=\"polyline19\" d=\"M0 374h3456l602 774\"></path></g></g></svg> <div class=\"distribution__descr distribution__descr_ts\"><span class=\"bold\">60%</span> in the Token Sale</div> <div class=\"distribution__descr distribution__descr_reserve\"><span class=\"bold\">10%</span> liquidity reserve</div> <div class=\"distribution__descr distribution__descr_team\"><span class=\"bold\">12%</span> to the team</div> <div class=\"distribution__descr distribution__descr_partner\"><span class=\"bold\">12%</span> to partners</div> <div class=\"distribution__descr distribution__descr_research\"><span class=\"bold\">6%</span> to researchers</div> </div>"
+            legendCallback: function() {
+                return "<div class=\"distribution chart1__helpers\"> <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"donut_path path_1\" viewBox=\"0 0 9253 3657\"> <defs id=\"defs4\"><style id=\"style6\"> .chart1__helpers .str0{stroke:#707070;stroke-width:9.5502} .chart1__helpers .fil0{fill:none} .chart1__helpers .fil1{fill:#02bff6} .chart1__helpers .fil3{fill:#0992db} .chart1__helpers .fil4{fill:#114d8d} .chart1__helpers .fil2{fill:#4fd6ff} </style></defs> <g id=\"Layer_x0020_1\"><g id=\"_1504955520\"><path class=\"fil0 str0\" id=\"polyline11\" d=\"M5590 3249l188 247h3456\"></path><path class=\"fil0 str0\" id=\"polyline13\" d=\"M5575 1584l188-246h3456\"></path><path class=\"fil0 str0\" id=\"polyline15\" d=\"M5575 2547l188-247h3456\"></path><path class=\"fil0 str0\" id=\"polyline17\" d=\"M5161 1148l602-774h3456\"></path><path class=\"fil0 str0\" id=\"polyline19\" d=\"M0 374h3456l602 774\"></path></g></g></svg> <div class=\"distribution__descr\"><span class=\"bold\">60%</span> in the Token Sale</div> <div class=\"distribution__descr\"><span class=\"bold\">10%</span> liquidity reserve</div> <div class=\"distribution__descr\"><span class=\"bold\">12%</span> to the team</div> <div class=\"distribution__descr\"><span class=\"bold\">12%</span> to partners</div> <div class=\"distribution__descr\"><span class=\"bold\">6%</span> to researchers</div> </div>"
             }
         }
     });
@@ -566,18 +573,19 @@
             datasets: [{
                 label: "My First Dataset",
                 data: [10, 40, 40, 10],
-                backgroundColor: ["#4fd6ff", "#3673b5", "#114d8d", "02bff6"]
+                backgroundColor: ["#4fd5ff", "#3673b5", "#114d8d", "02bff6"]
             }]
         },
         options: {
             legend: {
                 display: false
             },
-            legendCallback: function (chart) {
-                return "<div class=\"distribution chart2__helpers\"> <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"donut_path path_2\" viewBox=\"0 0 11382 4765\"> <defs id=\"defs4\"> <style id=\"style6\"> .chart2__helpers .str0{stroke:#707070;stroke-width:11.7675} .chart2__helpers .fil0{fill:none} .chart2__helpers .fil1{fill:#02bff6} .chart2__helpers .fil3{fill:#0992db} .chart2__helpers .fil4{fill:#114d8d} .chart2__helpers .fil2{fill:#4fd6ff} </style> </defs> <g id=\"Layer_x0020_1\"><g id=\"_970941424\"><path class=\"fil0 str0\" id=\"polyline11\" d=\"M4490 4263l-232 304H0\"></path><path class=\"fil0 str0\" id=\"polyline13\" d=\"M6875 4263l232 304h4258\"></path><path class=\"fil0 str0\" id=\"polyline15\" d=\"M5824 1282l-232-304H0\"></path><path class=\"fil0 str0\" id=\"polyline17\" d=\"M6875 1812l232-305h4258\"></path></g></g></svg> <div class=\"distribution__descr distribution__descr_develop\">Al Least <span class=\"bold\">40%</span> for Platform Development</div> <div class=\"distribution__descr distribution__descr_liquid\">Up to <span class=\"bold\">40%</span> Liquidity reverse (prepay for computing power)</div> <div class=\"distribution__descr distribution__descr_pr\"><span class=\"bold\">10%</span> for PR and Marketing of Neuromation service</div> <div class=\"distribution__descr distribution__descr_backer\"><span class=\"bold\">10%</span> to partners / advisers /early backers</div> </div>"
+            legendCallback: function () {
+                return "<div class=\"distribution chart2__helpers\"> <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"donut_path path_2\" viewBox=\"0 0 11382 4765\"> <defs id=\"defs4\"> <style id=\"style6\"> .chart2__helpers .str0{stroke:#707070;stroke-width:11.7675} .chart2__helpers .fil0{fill:none} .chart2__helpers .fil1{fill:#02bff6} .chart2__helpers .fil3{fill:#0992db} .chart2__helpers .fil4{fill:#114d8d} .chart2__helpers .fil2{fill:#4fd6ff} </style> </defs> <g id=\"Layer_x0020_1\"><g id=\"_970941424\"><path class=\"fil0 str0\" id=\"polyline11\" d=\"M4490 4263l-232 304H0\"></path><path class=\"fil0 str0\" id=\"polyline13\" d=\"M6875 4263l232 304h4258\"></path><path class=\"fil0 str0\" id=\"polyline15\" d=\"M5824 1282l-232-304H0\"></path><path class=\"fil0 str0\" id=\"polyline17\" d=\"M6875 1812l232-305h4258\"></path></g></g></svg> <div class=\"distribution__descr\">Al Least <span class=\"bold\">40%</span> for Platform Development</div> <div class=\"distribution__descr\">Up to <span class=\"bold\">40%</span> Liquidity reverse (prepay for computing power)</div> <div class=\"distribution__descr\"><span class=\"bold\">10%</span> for PR and Marketing of Neuromation service</div> <div class=\"distribution__descr\"><span class=\"bold\">10%</span> to partners / advisers /early backers</div> </div>"
             }
         }
     });
+    document.getElementById('js-legend_bar').innerHTML = myChart.generateLegend();
     document.getElementById('js-legend').innerHTML = myDoughnutChart.generateLegend();
     document.getElementById('js-legend_2').innerHTML = secondDoughnutChart.generateLegend();
 </script>
