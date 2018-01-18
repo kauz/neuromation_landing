@@ -23,6 +23,18 @@ nav.--open {
   height: auto;
   margin: auto;
   border: none;
+  width: 100%;
+  li {
+    //margin: 50px 0;
+    &:before {
+      @extend .pseudo,
+              .dashed_line,
+              .h_indent
+    }
+    &:last-child {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 ul.navigation {
@@ -105,20 +117,4 @@ ul.navigation {
   top: 10px;
   width: 0%;
   left: 50%;
-}
-
-@media only screen and (min-width: 768px) {
-  .nav-btn {
-    display: none;
-  }
-  nav {
-    display: flex;
-    justify-content: center;
-    flex: 1;
-    transition: height, margin .3s ease;
-    z-index: 1;
-  }
-  ul.navigation {
-    flex-flow: row wrap;
-  }
 }
