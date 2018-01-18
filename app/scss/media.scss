@@ -1,5 +1,5 @@
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   body {
     font-size:initial;
   }
@@ -15,6 +15,25 @@
   .head__content {
     flex-flow: row nowrap;
     justify-content: space-between;
+  }
+  .token__details {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    .token__rect {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      width: 340px;
+      height: 300px;
+      margin: 20px 10px;
+      div {
+        margin: 20px;
+      }
+      &:last-child {
+        text-align: center;
+      }
+    }
   }
 }
 @media (min-width: 1024px) {

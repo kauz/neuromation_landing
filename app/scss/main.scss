@@ -367,6 +367,19 @@ h2.subtitle {
     }
   }
 }
+//TOKEN DETAILS
+.token__details {
+  @extend .flex,
+          .flex-column,
+          .flex-center;
+  .token__rect {
+    width: 100%;
+    outline: solid 3px rgba(225, 225, 225, 0.4);
+    div {
+      margin: 20px;
+    }
+  }
+}
 .circle_wrap {
   position: relative;
 }
@@ -394,16 +407,6 @@ h2.subtitle {
   margin: 3px;
   border-radius: 50%;
   background: $pacificBlue;
-}
-.token_rect {
-  width: 15%;
-  max-width: 290px;
-  border: solid 3px rgba(225, 225, 225, 0.4);
-  padding: 20px 40px;
-  margin: 0 30px;
-  &:last-child {
-    text-align: center;
-  }
 }
 
 .token__distribution, .proceeds__distribution, .timing__bonus {

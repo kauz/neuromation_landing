@@ -396,10 +396,10 @@ body {
 .dashed_line, nav.--open li:before {
   border-bottom: 1px dashed #26a9cc; }
 
-.flex, .navigation__line, .head__content, .timing, .roadmap, .roadmap_wrapper {
+.flex, .navigation__line, .head__content, .timing, .token__details, .roadmap, .roadmap_wrapper {
   display: flex; }
 
-.flex-column, .navigation__line, .head__content, .roadmap {
+.flex-column, .navigation__line, .head__content, .token__details, .roadmap {
   flex-flow: column nowrap; }
 
 .flex-row, .timing, .roadmap_wrapper {
@@ -417,7 +417,7 @@ body {
 .justify-end {
   justify-content: flex-end; }
 
-.flex-center, .navigation__line, .head__content {
+.flex-center, .navigation__line, .head__content, .token__details {
   align-items: center; }
 
 .curs_default {
@@ -725,16 +725,22 @@ h2.subtitle {
 .block4_step {
   margin: 60px auto; }
 
-.timing .flex-column, .timing .navigation__line, .timing .head__content, .timing .roadmap {
+.timing .flex-column, .timing .navigation__line, .timing .head__content, .timing .token__details, .timing .roadmap {
   margin: 20px 80px;
   text-align: center; }
-  .timing .flex-column .circle_wrap, .timing .navigation__line .circle_wrap, .timing .head__content .circle_wrap, .timing .roadmap .circle_wrap {
+  .timing .flex-column .circle_wrap, .timing .navigation__line .circle_wrap, .timing .head__content .circle_wrap, .timing .token__details .circle_wrap, .timing .roadmap .circle_wrap {
     margin: 20px auto; }
+
+.token__details .token__rect {
+  width: 100%;
+  outline: solid 3px rgba(225, 225, 225, 0.4); }
+  .token__details .token__rect div {
+    margin: 20px; }
 
 .circle_wrap {
   position: relative; }
 
-.flex-column:nth-child(1) .circle_wrap:after, .navigation__line:nth-child(1) .circle_wrap:after, .head__content:nth-child(1) .circle_wrap:after, .roadmap:nth-child(1) .circle_wrap:after, .flex-column:nth-child(2) .circle_wrap:after, .navigation__line:nth-child(2) .circle_wrap:after, .head__content:nth-child(2) .circle_wrap:after, .roadmap:nth-child(2) .circle_wrap:after {
+.flex-column:nth-child(1) .circle_wrap:after, .navigation__line:nth-child(1) .circle_wrap:after, .head__content:nth-child(1) .circle_wrap:after, .token__details:nth-child(1) .circle_wrap:after, .roadmap:nth-child(1) .circle_wrap:after, .flex-column:nth-child(2) .circle_wrap:after, .navigation__line:nth-child(2) .circle_wrap:after, .head__content:nth-child(2) .circle_wrap:after, .token__details:nth-child(2) .circle_wrap:after, .roadmap:nth-child(2) .circle_wrap:after {
   display: block;
   content: "";
   width: 270px;
@@ -758,15 +764,6 @@ h2.subtitle {
   margin: 3px;
   border-radius: 50%;
   background: #26a9cc; }
-
-.token_rect {
-  width: 15%;
-  max-width: 290px;
-  border: solid 3px rgba(225, 225, 225, 0.4);
-  padding: 20px 40px;
-  margin: 0 30px; }
-  .token_rect:last-child {
-    text-align: center; }
 
 .bar_helper {
   position: absolute; }
