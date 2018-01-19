@@ -1,3 +1,4 @@
+// Load in dependencies
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
@@ -10,6 +11,8 @@ var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
 var autoprefixer = require('gulp-autoprefixer');
+var concat = require('gulp-concat');
+var merge = require('merge-stream');
 var spritesmith = require('gulp.spritesmith');
 
 
@@ -17,7 +20,7 @@ gulp.task('default', function (callback) {
   runSequence(['sass','browserSync', 'watch'],
     callback
   )
-})
+});
 
 
 gulp.task('build', function (callback) {
@@ -25,37 +28,59 @@ gulp.task('build', function (callback) {
     ['sass', 'useref', 'images', 'fonts'], 'autoprefixer',
     callback
   )
-})
+});
 
 gulp.task('watch', ['browserSync', 'sass'], function (){
   gulp.watch('app/scss/**/*.scss', ['sass']);
   gulp.watch('app/*.html', browserSync.reload); 
   gulp.watch('app/js/**/*.js', browserSync.reload);  
-})
-
-gulp.task('sprite', function() {
-    var spriteData = 
-        gulp.src('app/images/icons/*.*') // путь, откуда берем картинки для спрайта
-            .pipe(spritesmith({
-                imgName: 'sprite.png',
-		imgPath: '../images/sprite/sprite.png',
-                cssName: '_sprite.scss',
-		cssFormat: 'scss',
-		padding: 10,
-            }));
-
-    spriteData.img.pipe(gulp.dest('app/images/sprite')); // путь, куда сохраняем картинку
-    spriteData.css.pipe(gulp.dest('app/scss/partials')); // путь, куда сохраняем стили
 });
 
-gulp.task('autoprefixer', () =>
-    gulp.src('dist/css/*.css')
+gulp.task('sprite', function () {
+    // Generate our spritesheets
+    var iconSpriteData = gulp.src('app/images/icons/*.*').pipe(spritesmith({
+        imgName: 'icons.png',
+        imgPath: '../images/sprites/icons.png',
+        cssName: '_icons.scss',
+        cssFormat: 'scss',
+        padding: 10,
+        cssVarMap: function (sprite) {
+            sprite.name = 'icon-' + sprite.name;
+        }
+    }));
+    var logoSpriteData = gulp.src('app/images/logos/*.*').pipe(spritesmith({
+        imgName: 'logos.png',
+        imgPath: '../images/sprites/logos.png',
+        cssName: '_logos.scss',
+        cssFormat: 'scss',
+        padding: 20,
+        cssVarMap: function (sprite) {
+            sprite.name = 'logo-' + sprite.name;
+        }
+    }));
+
+    // Output our images
+    var iconImgStream = iconSpriteData.img.pipe(gulp.dest('app/images/sprites'));
+    var logoImgStream = logoSpriteData.img.pipe(gulp.dest('app/images/sprites'));
+
+    // Concatenate our CSS streams
+    var scssStream = merge(iconSpriteData.css, logoSpriteData.css)
+        .pipe(concat('_sprite.scss'))
+        .pipe(gulp.dest('app/scss/partials'));
+
+    // Return a merged stream to handle all our `end` events
+    return merge(iconImgStream, logoImgStream, scssStream);
+});
+
+
+gulp.task('autoprefixer', function() {
+    return gulp.src('dist/css/*.css')
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
         }))
         .pipe(gulp.dest('dist/css'))
-);
+});
 
 gulp.task('sass', function() {
   return gulp.src('app/scss/**/*.scss') // Gets all files ending with .scss in app/scss and children dirs
@@ -64,7 +89,7 @@ gulp.task('sass', function() {
     .pipe(browserSync.reload({
       stream: true
     }))
-})
+});
 
 gulp.task('useref', function(){
   return gulp.src('app/*.html')
@@ -87,23 +112,23 @@ gulp.task('images', function(){
 gulp.task('fonts', function() {
   return gulp.src('app/fonts/**/*')
   .pipe(gulp.dest('dist/fonts'))
-})
+});
 
 gulp.task('clean:dist', function() {
   return del.sync('dist');
-})
+});
 
 gulp.task('cache:clear', function (callback) {
 return cache.clearAll(callback)
-})
+});
 
 gulp.task('browserSync', function() {
       browserSync.init({
 	  server: {
-				baseDir: 'app',
+				baseDir: 'app'
 			},
           open: 'external',
           host: 'neuromation.dev',
           port: 3000
     });
-})
+});

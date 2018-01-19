@@ -178,6 +178,373 @@ table {
   font-family: "Roboto";
   font-weight: 900; }
 
+.icon-hacked {
+  background-image: url(../images/sprites/icons.png);
+  background-position: -145px -282px;
+  width: 135px;
+  height: 42px; }
+
+.icon-ico-bench {
+  background-image: url(../images/sprites/icons.png);
+  background-position: -357px -52px;
+  width: 135px;
+  height: 42px; }
+
+.icon-icoraiting {
+  background-image: url(../images/sprites/icons.png);
+  background-position: 0px -282px;
+  width: 135px;
+  height: 42px; }
+
+.icon-hacked-reverse {
+  background-image: url(../images/sprites/icons.png);
+  background-position: -357px -156px;
+  width: 135px;
+  height: 42px; }
+
+.icon-ico-bench-reverse {
+  background-image: url(../images/sprites/icons.png);
+  background-position: -357px 0px;
+  width: 135px;
+  height: 42px; }
+
+.icon-icoraiting-reverse {
+  background-image: url(../images/sprites/icons.png);
+  background-position: -357px -104px;
+  width: 135px;
+  height: 42px; }
+
+.icon-mail {
+  background-image: url(../images/sprites/icons.png);
+  background-position: -357px -208px;
+  width: 54px;
+  height: 44px; }
+
+.icon-clock {
+  background-image: url(../images/sprites/icons.png);
+  background-position: -456px -208px;
+  width: 25px;
+  height: 25px; }
+
+.icon-download {
+  background-image: url(../images/sprites/icons.png);
+  background-position: -357px -282px;
+  width: 19px;
+  height: 25px; }
+
+.icon-paper_term {
+  background-image: url(../images/sprites/icons.png);
+  background-position: -421px -208px;
+  width: 25px;
+  height: 31px; }
+
+.icon-arrow {
+  margin-left: 20%;
+  background-image: url(../images/sprites/icons.png);
+  background-position: -357px -262px;
+  width: 42px;
+  height: 10px; }
+
+.icon-bit {
+  background-image: url(../images/sprites/icons.png);
+  background-position: -119px -188px;
+  width: 109px;
+  height: 84px; }
+
+.icon-boards {
+  background-image: url(../images/sprites/icons.png);
+  background-position: 0px -94px;
+  width: 109px;
+  height: 84px; }
+
+.icon-brain {
+  background-image: url(../images/sprites/icons.png);
+  background-position: -119px -94px;
+  width: 109px;
+  height: 84px; }
+
+.icon-cubic {
+  background-image: url(../images/sprites/icons.png);
+  background-position: -238px -94px;
+  width: 109px;
+  height: 84px; }
+
+.icon-health {
+  background-image: url(../images/sprites/icons.png);
+  background-position: 0px 0px;
+  width: 109px;
+  height: 84px; }
+
+.icon-net {
+  background-image: url(../images/sprites/icons.png);
+  background-position: 0px -188px;
+  width: 109px;
+  height: 84px; }
+
+.icon-rocket {
+  background-image: url(../images/sprites/icons.png);
+  background-position: -238px 0px;
+  width: 109px;
+  height: 84px; }
+
+.icon-wheel {
+  background-image: url(../images/sprites/icons.png);
+  background-position: -119px 0px;
+  width: 109px;
+  height: 84px; }
+
+.logo-all-about-bit {
+  background-image: url(../images/sprites/logos.png);
+  background-position: 0px -326px;
+  width: 180px;
+  height: 45px; }
+
+.logo-bankless {
+  background-image: url(../images/sprites/logos.png);
+  background-position: 0px -456px;
+  width: 180px;
+  height: 45px; }
+
+.logo-bb {
+  background-image: url(../images/sprites/logos.png);
+  background-position: 0px -131px;
+  width: 180px;
+  height: 45px; }
+
+.logo-bit2 {
+  background-image: url(../images/sprites/logos.png);
+  background-position: -200px 0px;
+  width: 180px;
+  height: 45px; }
+
+.logo-bit-n-alt {
+  background-image: url(../images/sprites/logos.png);
+  background-position: -200px -65px;
+  width: 180px;
+  height: 45px; }
+
+.logo-bitcoin {
+  background-image: url(../images/sprites/logos.png);
+  background-position: -200px -130px;
+  width: 180px;
+  height: 45px; }
+
+.logo-bitcoin-insider {
+  background-image: url(../images/sprites/logos.png);
+  background-position: 0px -196px;
+  width: 180px;
+  height: 45px; }
+
+.logo-bitmakler {
+  background-image: url(../images/sprites/logos.png);
+  background-position: -200px -196px;
+  width: 180px;
+  height: 45px; }
+
+.logo-bitstorm {
+  background-image: url(../images/sprites/logos.png);
+  background-position: 0px -261px;
+  width: 180px;
+  height: 45px; }
+
+.logo-block-tribune {
+  background-image: url(../images/sprites/logos.png);
+  background-position: -200px -261px;
+  width: 180px;
+  height: 45px; }
+
+.logo-blockchain-news {
+  background-image: url(../images/sprites/logos.png);
+  background-position: 0px 0px;
+  width: 180px;
+  height: 46px; }
+
+.logo-btcoin {
+  background-image: url(../images/sprites/logos.png);
+  background-position: -200px -326px;
+  width: 180px;
+  height: 45px; }
+
+.logo-cfo {
+  background-image: url(../images/sprites/logos.png);
+  background-position: -400px 0px;
+  width: 180px;
+  height: 45px; }
+
+.logo-coin-ninja {
+  background-image: url(../images/sprites/logos.png);
+  background-position: -400px -65px;
+  width: 180px;
+  height: 45px; }
+
+.logo-coinspeaker {
+  background-image: url(../images/sprites/logos.png);
+  background-position: -400px -130px;
+  width: 180px;
+  height: 45px; }
+
+.logo-crowdfund {
+  background-image: url(../images/sprites/logos.png);
+  background-position: -400px -195px;
+  width: 180px;
+  height: 45px; }
+
+.logo-crypto-news {
+  background-image: url(../images/sprites/logos.png);
+  background-position: -400px -260px;
+  width: 180px;
+  height: 45px; }
+
+.logo-decentral {
+  background-image: url(../images/sprites/logos.png);
+  background-position: -400px -325px;
+  width: 180px;
+  height: 45px; }
+
+.logo-digital-journal {
+  background-image: url(../images/sprites/logos.png);
+  background-position: 0px -391px;
+  width: 180px;
+  height: 45px; }
+
+.logo-e27 {
+  background-image: url(../images/sprites/logos.png);
+  background-position: -200px -391px;
+  width: 180px;
+  height: 45px; }
+
+.logo-forklog {
+  background-image: url(../images/sprites/logos.png);
+  background-position: -400px -391px;
+  width: 180px;
+  height: 45px; }
+
+.logo-geeks {
+  background-image: url(../images/sprites/logos.png);
+  background-position: 0px -66px;
+  width: 180px;
+  height: 45px; }
+
+.logo-h {
+  background-image: url(../images/sprites/logos.png);
+  background-position: -200px -456px;
+  width: 180px;
+  height: 45px; }
+
+.logo-hacked {
+  background-image: url(../images/sprites/logos.png);
+  background-position: -400px -456px;
+  width: 180px;
+  height: 45px; }
+
+.logo-hacker-space {
+  background-image: url(../images/sprites/logos.png);
+  background-position: 0px -521px;
+  width: 180px;
+  height: 45px; }
+
+.logo-hackernoon {
+  background-image: url(../images/sprites/logos.png);
+  background-position: -200px -521px;
+  width: 180px;
+  height: 45px; }
+
+.logo-ico-daily {
+  background-image: url(../images/sprites/logos.png);
+  background-position: -400px -521px;
+  width: 180px;
+  height: 45px; }
+
+.logo-icoweb {
+  background-image: url(../images/sprites/logos.png);
+  background-position: -600px 0px;
+  width: 180px;
+  height: 45px; }
+
+.logo-kripto-parahaber {
+  background-image: url(../images/sprites/logos.png);
+  background-position: -600px -65px;
+  width: 180px;
+  height: 45px; }
+
+.logo-liga {
+  background-image: url(../images/sprites/logos.png);
+  background-position: -600px -130px;
+  width: 180px;
+  height: 45px; }
+
+.logo-next-big-future {
+  background-image: url(../images/sprites/logos.png);
+  background-position: -600px -195px;
+  width: 180px;
+  height: 45px; }
+
+.logo-nextworld {
+  background-image: url(../images/sprites/logos.png);
+  background-position: -600px -260px;
+  width: 180px;
+  height: 45px; }
+
+.logo-orwell {
+  background-image: url(../images/sprites/logos.png);
+  background-position: -600px -325px;
+  width: 180px;
+  height: 45px; }
+
+.logo-quebec {
+  background-image: url(../images/sprites/logos.png);
+  background-position: -600px -390px;
+  width: 180px;
+  height: 45px; }
+
+.logo-sputnik {
+  background-image: url(../images/sprites/logos.png);
+  background-position: -600px -455px;
+  width: 180px;
+  height: 45px; }
+
+.logo-startup {
+  background-image: url(../images/sprites/logos.png);
+  background-position: -600px -520px;
+  width: 180px;
+  height: 45px; }
+
+.logo-tadviser {
+  background-image: url(../images/sprites/logos.png);
+  background-position: 0px -586px;
+  width: 180px;
+  height: 45px; }
+
+.logo-tech-fusion {
+  background-image: url(../images/sprites/logos.png);
+  background-position: -200px -586px;
+  width: 180px;
+  height: 45px; }
+
+.logo-techco {
+  background-image: url(../images/sprites/logos.png);
+  background-position: -400px -586px;
+  width: 180px;
+  height: 45px; }
+
+.logo-venture-canvas {
+  background-image: url(../images/sprites/logos.png);
+  background-position: -600px -586px;
+  width: 180px;
+  height: 45px; }
+
+.logo-wall-street {
+  background-image: url(../images/sprites/logos.png);
+  background-position: 0px -651px;
+  width: 180px;
+  height: 45px; }
+
+.logo-yahoo {
+  background-image: url(../images/sprites/logos.png);
+  background-position: -200px -651px;
+  width: 180px;
+  height: 45px; }
+
 nav {
   display: none; }
   nav--open {
@@ -274,121 +641,6 @@ ul.navigation :hover {
   width: 0%;
   left: 50%; }
 
-.hacked {
-  background-image: url(../images/sprite/sprite.png);
-  background-position: -357px -104px;
-  width: 135px;
-  height: 42px; }
-
-.ico-bench {
-  background-image: url(../images/sprite/sprite.png);
-  background-position: -357px -52px;
-  width: 135px;
-  height: 42px; }
-
-.icoraiting {
-  background-image: url(../images/sprite/sprite.png);
-  background-position: -357px 0px;
-  width: 135px;
-  height: 42px; }
-
-.hacked-reverse {
-  background-image: url(../images/sprite/sprite.png);
-  background-position: -357px -156px;
-  width: 126px;
-  height: 45px; }
-
-.ico-bench-reverse {
-  background-image: url(../images/sprite/sprite.png);
-  background-position: 0px -282px;
-  width: 153px;
-  height: 45px; }
-
-.icoraiting-reverse {
-  background-image: url(../images/sprite/sprite.png);
-  background-position: -163px -282px;
-  width: 136px;
-  height: 45px; }
-
-.mail {
-  background-image: url(../images/sprite/sprite.png);
-  background-position: -357px -211px;
-  width: 54px;
-  height: 44px; }
-
-.clock {
-  background-image: url(../images/sprite/sprite.png);
-  background-position: -456px -211px;
-  width: 25px;
-  height: 25px; }
-
-.download {
-  background-image: url(../images/sprite/sprite.png);
-  background-position: -357px -285px;
-  width: 19px;
-  height: 25px; }
-
-.paper_term {
-  background-image: url(../images/sprite/sprite.png);
-  background-position: -421px -211px;
-  width: 25px;
-  height: 31px; }
-
-.arrow {
-  margin-left: 20%;
-  background-image: url(../images/sprite/sprite.png);
-  background-position: -357px -265px;
-  width: 42px;
-  height: 10px; }
-
-.bit {
-  background-image: url(../images/sprite/sprite.png);
-  background-position: -119px -188px;
-  width: 109px;
-  height: 84px; }
-
-.boards {
-  background-image: url(../images/sprite/sprite.png);
-  background-position: 0px -94px;
-  width: 109px;
-  height: 84px; }
-
-.brain {
-  background-image: url(../images/sprite/sprite.png);
-  background-position: -119px -94px;
-  width: 109px;
-  height: 84px; }
-
-.cubic {
-  background-image: url(../images/sprite/sprite.png);
-  background-position: -238px -94px;
-  width: 109px;
-  height: 84px; }
-
-.health {
-  background-image: url(../images/sprite/sprite.png);
-  background-position: 0px 0px;
-  width: 109px;
-  height: 84px; }
-
-.net {
-  background-image: url(../images/sprite/sprite.png);
-  background-position: 0px -188px;
-  width: 109px;
-  height: 84px; }
-
-.rocket {
-  background-image: url(../images/sprite/sprite.png);
-  background-position: -238px 0px;
-  width: 109px;
-  height: 84px; }
-
-.wheel {
-  background-image: url(../images/sprite/sprite.png);
-  background-position: -119px 0px;
-  width: 109px;
-  height: 84px; }
-
 body {
   font-size: small; }
 
@@ -399,16 +651,16 @@ body {
 .dashed_line, nav.--open li:before {
   border-bottom: 1px dashed #26a9cc; }
 
-.flex, .navigation__line, .head__content, .rate, .rate__block:last-child, .timing, .token__details, .roadmap, .roadmap_wrapper {
+.flex, .navigation__line, .head__content, .rate, .rate__block:last-child, .partners, .timing, .token__details, .roadmap, .roadmap_wrapper {
   display: flex; }
 
 .flex-column, .navigation__line, .head__content, .timing, .token__details, .roadmap {
   flex-flow: column nowrap; }
 
-.flex-row, .roadmap_wrapper {
+.flex-row, .partners, .roadmap_wrapper {
   flex-flow: row wrap; }
 
-.justify-center {
+.justify-center, .partners {
   justify-content: center; }
 
 .justify-between {
@@ -475,7 +727,7 @@ i {
 .underline {
   text-decoration: underline; }
 
-.wrapper {
+.wrapper, .partners {
   max-width: 1480px;
   margin: auto; }
 
@@ -659,7 +911,7 @@ h2.subtitle {
   margin: 30px auto; }
 
 .quote_wrapper {
-  max-width: 970px;
+  max-width: 600px;
   text-align: center;
   padding: 35px 15px;
   margin: 12px;
@@ -679,10 +931,10 @@ h2.subtitle {
 .quote_author, .quote_author a {
   color: #0b0b0b; }
 
-.block2 img {
-  width: 100%;
-  max-width: 1357px;
-  margin: 30px auto; }
+.partners {
+  margin: 60px 0 100px; }
+  .partners i {
+    margin: 20px; }
 
 .frame_wrrapper {
   width: 100%;

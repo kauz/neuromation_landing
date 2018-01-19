@@ -2,51 +2,8 @@
 @import "partials/colors";
 @import "partials/fonts";
 @import "partials/sprite";
+@import "partials/icons";
 @import "partials/navigation";
-
-.hacked {
-  @include sprite($hacked);
-}
-.ico-bench {
-  @include sprite($ico-bench);
-}
-.icoraiting {
-  @include sprite($icoraiting);
-}
-.hacked-reverse {
-  @include sprite($hacked-reverse);
-}
-.ico-bench-reverse {
-  @include sprite($ico-bench-reverse);
-}
-.icoraiting-reverse {
-  @include sprite($icoraiting-reverse);
-}
-.mail {
-  @include sprite($mail);
-}
-.clock {
-  @include sprite($clock);
-}
-.download {
-  @include sprite($download);
-}
-.paper_term {
-  @include sprite($paper_term);
-}
-.arrow {
-  margin-left: 20%;
-  @include sprite($arrow);
-}
-
-.bit {@include sprite($bit);}
-.boards {@include sprite($boards);}
-.brain {@include sprite($brain);}
-.cubic {@include sprite($cubic);}
-.health {@include sprite($health);}
-.net {@include sprite($net);}
-.rocket {@include sprite($rocket);}
-.wheel {@include sprite($wheel);}
 
 body {
   font-size:small;
@@ -306,7 +263,7 @@ h2.subtitle {
   margin: 30px auto;
 }
 .quote_wrapper {
-  max-width: 970px;
+  max-width: 600px;
   text-align: center;
   padding: 35px 15px;
   margin: 12px;
@@ -329,10 +286,16 @@ h2.subtitle {
   @extend .h_indent;
   color: #0b0b0b;
 }
-.block2 img {
-  width: 100%;
-  max-width: 1357px;
-  margin: 30px auto;
+
+.partners {
+  @extend .wrapper,
+          .flex,
+          .flex-row,
+          .justify-center;
+  margin: 60px 0 100px;
+  i {
+    margin: 20px;
+  }
 }
 
 //NEUROMATION PLATFORM INTRO
