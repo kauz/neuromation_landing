@@ -35,7 +35,7 @@
   @include sprite($paper_term);
 }
 .arrow {
-  margin-left: 30px;
+  margin-left: 20%;
   @include sprite($arrow);
 }
 
@@ -228,6 +228,8 @@ button.submit {
 
 
 section {
+  @extend .white_b;
+  &.block1, &.block3, &.block5 {@extend .lightBlue_b}
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
@@ -241,37 +243,40 @@ section {
   font-size:32px;
 }
 h1.title {
-  font-size:48px;
   margin: 40px auto;
 }
 h2.subtitle {
   margin: 20px auto;
 }
+
+//ICO RATINGS
+
 .rate {
-  display: flex;
+  @extend .roboto_medium,
+          .flex;
   font-size:2.12em;
   margin: 28px auto;
-  //max-height: 80px;
+  max-height: 80px;
+  width: 100%;
 }
+
 .rate__block {
+  @extend .relative;
   min-height: 38px;
-  position: relative;
   display: inline-block;
 }
 .rate__block:first-child {
-  padding: 15px;
+  @extend .pacificBlue,
+          .white_c;
+  padding: 10px;
 }
 .rate__block:first-child:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: -20px;
-  border-bottom: 68px solid #26a9cc;
-  border-left: 20px solid transparent;
+  @extend .pseudo,
+          .absolute;
 }
 .rate__block:first-child:after {
-  content: "";
-  position: absolute;
+  @extend .pseudo,
+          .absolute;
   bottom: 35%;
   right: -10px;
   border-style: solid;
@@ -279,22 +284,21 @@ h2.subtitle {
   border-width: 10px 0 10px 10px;
 }
 .rate__block:last-child {
+  @extend .flex;
   background-color: rgba(38, 168, 203, 0.1);
-  display: flex;
   align-items: center;
+  width: 100%;
 }
 .rate__block:last-child div {
   display: block;
   margin-left: 20px;
 }
 .rate__block:last-child:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: -20px;
-  border-top: 68px solid rgba(38, 168, 203, 0.1);
-  border-right: 20px solid transparent;
+  @extend .pseudo,
+          .absolute;
 }
+
+//MEDIA ABOUT NEUROMATION
 .quote {
   color: #106a8c;
   position: relative;
@@ -341,6 +345,8 @@ h2.subtitle {
   max-width: 1357px;
   margin: 30px auto;
 }
+
+//NEUROMATION PLATFORM INTRO
 .frame_wrrapper {
   width: 100%;
   max-width: 601px;

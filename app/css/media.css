@@ -1,3 +1,19 @@
+@media (min-width: 425px) {
+  .rate, .rate__block:last-child {
+    width: auto; }
+  .rate__block:first-child {
+    padding: 15px; }
+  .rate__block:first-child:before {
+    bottom: 0;
+    left: -20px;
+    border-bottom: 68px solid #26a9cc;
+    border-left: 20px solid transparent; }
+  .rate__block:last-child:after {
+    bottom: 0;
+    right: -20px;
+    border-top: 68px solid rgba(38, 168, 203, 0.1);
+    border-right: 20px solid transparent; } }
+
 @media only screen and (min-width: 769px) {
   body {
     font-size: initial; }
@@ -11,6 +27,8 @@
   .head__content {
     flex-flow: row nowrap;
     justify-content: space-between; }
+  h1.title {
+    font-size: 48px; }
   .timing {
     flex-flow: row nowrap;
     align-items: flex-start; }
