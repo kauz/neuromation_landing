@@ -324,18 +324,7 @@ h2.subtitle {
   line-height:30px;
   background-color: white;
 }
-.quote_open:before {
-  top: -11px;
-  left: -10px;
-  display: block;
-  content: "«";
-}
-.quote_close:after {
-  bottom: -12px;
-  right: -10px;
-  display: block;
-  content: "»";
-}
+
 .quote_author, .quote_author a {
   @extend .h_indent;
   color: #0b0b0b;

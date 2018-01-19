@@ -127,25 +127,25 @@ table {
 @font-face {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 200;
+  font-weight: 300;
   src: url("../fonts/roboto/Roboto-Light.eot?") format("eot"), url("../fonts/roboto/Roboto-Light.woff2") format("woff2"), url("../fonts/roboto/Roboto-Light.woff") format("woff"), url("../fonts/roboto/Roboto-Light.ttf") format("truetype"), url("../fonts/roboto/Roboto-Light.svg#Roboto") format("svg"); }
 
 @font-face {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 300;
+  font-weight: normal;
   src: url("../fonts/roboto/Roboto-Regular.eot?") format("eot"), url("../fonts/roboto/Roboto-Regular.woff2") format("woff2"), url("../fonts/roboto/Roboto-Regular.woff") format("woff"), url("../fonts/roboto/Roboto-Regular.ttf") format("truetype"), url("../fonts/roboto/Roboto-Regular.svg#Roboto") format("svg"); }
 
 @font-face {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   src: url("../fonts/roboto/Roboto-Medium.eot?") format("eot"), url("../fonts/roboto/Roboto-Medium.woff2") format("woff2"), url("../fonts/roboto/Roboto-Medium.woff") format("woff"), url("../fonts/roboto/Roboto-Medium.ttf") format("truetype"), url("../fonts/roboto/Roboto-Medium.svg#Roboto") format("svg"); }
 
 @font-face {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 600;
+  font-weight: bold;
   src: url("../fonts/roboto/Roboto-Bold.eot?") format("eot"), url("../fonts/roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/roboto/Roboto-Bold.woff") format("woff"), url("../fonts/roboto/Roboto-Bold.ttf") format("truetype"), url("../fonts/roboto/Roboto-Bold.svg#Roboto") format("svg"); }
 
 @font-face {
@@ -160,19 +160,19 @@ table {
 
 .roboto_light, .timing, .token__details .token__rect, .cross__cutting {
   font-family: "Roboto";
-  font-weight: 200; }
+  font-weight: 300; }
 
 .roboto_regular, .title, .subtitle, .cross__cutting strong {
   font-family: "Roboto";
-  font-weight: 300; }
+  font-weight: normal; }
 
 .roboto_medium, .rate, .timing .timing__title, .bar_helper {
   font-family: "Roboto";
-  font-weight: 400; }
+  font-weight: 500; }
 
 .roboto_bold, .bar_helper div {
   font-family: "Roboto";
-  font-weight: 600; }
+  font-weight: bold; }
 
 .roboto_black, .pinetree:before, .pinetree:after {
   font-family: "Roboto";
@@ -675,18 +675,6 @@ h2.subtitle {
   vertical-align: middle;
   line-height: 30px;
   background-color: white; }
-
-.quote_open:before {
-  top: -11px;
-  left: -10px;
-  display: block;
-  content: "«"; }
-
-.quote_close:after {
-  bottom: -12px;
-  right: -10px;
-  display: block;
-  content: "»"; }
 
 .quote_author, .quote_author a {
   color: #0b0b0b; }

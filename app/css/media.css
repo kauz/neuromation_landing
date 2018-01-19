@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @media (min-width: 425px) {
   .rate, .rate__block:last-child {
     width: auto; }
@@ -29,6 +30,17 @@
     justify-content: space-between; }
   h1.title {
     font-size: 48px; }
+  .quote_open:before {
+    top: -18px;
+    left: -10px;
+    display: block;
+    content: "«"; }
+  .quote_close:after {
+    line-height: 19px;
+    bottom: -6px;
+    right: -10px;
+    display: block;
+    content: "»"; }
   .timing {
     flex-flow: row nowrap;
     align-items: flex-start; }
