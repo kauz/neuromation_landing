@@ -534,7 +534,8 @@ button.submit {
 }
 
 .distribution__descr {
-  @extend .f_regular;
+  @extend .f_regular,
+          .roboto_regular;
   &:before {
     content: "⯁";
     padding-right: 10px;
