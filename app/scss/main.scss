@@ -5,16 +5,43 @@
 @import "partials/icons";
 @import "partials/navigation";
 
+
+//GENERAL
 body {
   font-size:small;
 }
-.pseudo {
-  display: block;
-  content: '';
+
+.wrapper {
+  max-width: 1480px;
+  margin: auto;
 }
-.dashed_line {
-  border-bottom: 1px dashed #26a9cc;
+section {
+  @extend .white_b;
+  &.block1, &.block3, &.block5 {@extend .lightBlue_b}
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 }
+.title, .subtitle {
+  @extend .roboto_regular;
+  text-align: center;
+  text-transform: uppercase;
+  font-size:32px;
+}
+h1.title {
+  margin: 40px auto;
+}
+h2.subtitle {
+  margin: 20px auto;
+}
+
+a{color: #49cef2;&:hover{color: #40bce0}}
+i{display: inline-block; vertical-align: middle; margin-right: 20px}
+
+.pseudo {  display: block;  content: '';  }
+.dashed_line {border-bottom: 1px dashed #26a9cc; }
 .flex {display: flex;}
 .flex-column {flex-flow: column nowrap}
 .flex-row {flex-flow: row wrap}
@@ -30,21 +57,17 @@ body {
 .f_big {font-size: 1.625em};//26px
 .f_black {font-size: 3em};
 .fm_super {font-size: 3.35em};
-.f_super {font-size: 5em};
+.f_super {font-size: 4em};
 .h_indent {margin: 20px 0}
 .inline_b {display: inline-block}
 .relative {position: relative}
 .absolute {position: absolute}
-a{color: #49cef2;&:hover{color: #40bce0}}
-i{display: inline-block; vertical-align: middle; margin-right: 20px}
 .uppercase {text-transform: uppercase};
-.underline {
-  text-decoration: underline;}
-.container {
-}
-.wrapper {
-  max-width: 1480px;
-  margin: auto;
+.underline {  text-decoration: underline;}
+
+//HEAD PART
+.nav__bgr {
+  @extend .greenBlue_b;
 }
 .navigation__line {
   @extend .flex,
@@ -62,9 +85,13 @@ i{display: inline-block; vertical-align: middle; margin-right: 20px}
 }
 
 .slogan {
+  @extend .roboto_light,
+          .cyan_c,
+          .curs_default;
   display: none;
 }
 .head__block {
+  @extend .white_c;
   display: block;
   padding: 100px 0 175px 0;
   background: url(../images/header-background.jpg) repeat-x;
@@ -78,25 +105,74 @@ i{display: inline-block; vertical-align: middle; margin-right: 20px}
           .flex-column,
           .flex-center;
 }
-.header-left {max-width: 605px;}
-.header-right {max-width: 690px}
+.header__left {
+  @extend .flex,
+          .flex-column,
+          .flex-center,
+          .roboto_light;
+  max-width: 605px;
+  h1 {
+    @extend .h_indent,
+          .f_big,
+          .roboto_light;
+    text-align: center;
+    margin: 0 5%;
+  }
+  h2 {
+    @extend .roboto_regular,
+            .f_medium,
+            .h_indent;
+  }
+}
+.header__right {
+  @extend .flex,
+  .flex-column,
+  .flex-center,
+  .roboto_light;
+  max-width: 690px
+}
 
-.header_video {width: 100%}
+.header__video {width: 100%}
 
 .dashed {
   display: block;
   border-bottom: dashed 3px rgba(255,255,255,0.3);
   margin: 20px 0;
 }
+.pre__sale {
+  @extend .h_indent,
+          .roboto_medium,
+          .uppercase;
+  span {
+    @extend .roboto_thin;
+  }
+}
 .time {
   max-width: 450px;
+  #timer {
+    @extend .roboto_black,
+            .f_super;
+  }
   p {
     display: block;
   }
-  .time_desc {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
+  .time__desc {
+    @extend .flex,
+            .flex-row,
+            .justify-between,
+            .roboto_thin,
+            .f_medium;
+  }
+}
+.white__paper {
+  @extend .cyan_c,
+          .roboto_thin,
+          .f_big,
+          .h_indent;
+}
+.end__date {
+  span {
+    @extend .roboto_medium;
   }
 }
 .header_rate_wrap {
@@ -104,30 +180,34 @@ i{display: inline-block; vertical-align: middle; margin-right: 20px}
   flex-flow: row wrap;
   margin-bottom: 20px;
 }
-.rate_h {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  margin: 0 30px;
+.rating {
+  @extend .roboto_medium,
+          .fm_super,
+          .uppercase;
+}
+.rate__wrap {
+  @extend .flex,
+          .flex-column,
+          .justify-between,
+          .relative;
+  width: 100%;
+  margin: 20px auto;
   line-height: 60px;
-  position: relative;
   &:after {
-    @extend .roboto_thin;
-    position: absolute;
-    opacity: 0.2;
-    line-height: 110px;
-    vertical-align: middle;
-    font-size: 60px;
-    right: -35px;
-    top: 0;
-    display: block;
-    content: "|";
+    @extend .absolute,
+            .pseudo,
+            .roboto_thin,
+            .dashed_line;
+    bottom: -45px;
+    width: 100%;
+    margin: 20px auto;
   }
   &:nth-child(2) {font-size:0.63em;}
   &:last-child {margin-right: 0}
   &:last-child:after {display: none}
 }
 .rate__block_h {
+  @extend .flex;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -172,39 +252,26 @@ i{display: inline-block; vertical-align: middle; margin-right: 20px}
 button.submit {
   cursor: pointer;
 }
+.ribbon2 {
+  @extend .f_big;
+  padding: 10px 0;
+  background-color: #1497a3;
+  width: 100%;
+  text-align: center;
+  div {
+    display: inline-block;
+  }
+}
 .form-text {
   @extend .h_indent;
   width: 80%;
   position: relative;
-  text-decoration: underline;
+  margin-top:50px;
   div>p {
     line-height: 32px;
   }
 }
 
-
-
-section {
-  @extend .white_b;
-  &.block1, &.block3, &.block5 {@extend .lightBlue_b}
-  width: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-}
-.title, .subtitle {
-  @extend .roboto_regular;
-  text-align: center;
-  text-transform: uppercase;
-  font-size:32px;
-}
-h1.title {
-  margin: 40px auto;
-}
-h2.subtitle {
-  margin: 20px auto;
-}
 
 //ICO RATINGS
 
@@ -385,8 +452,15 @@ h2.subtitle {
 }
 
 //CHARTS
+@media (max-width: 320px) {
+  .container {
+    width: 280px;
+  }
+}
+
 .token__distribution, .proceeds__distribution, .timing__bonus {
   @extend .relative;
+  max-width: 600px;
 }
 .bar_helper {
   @extend .roboto_medium,

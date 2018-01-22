@@ -21,17 +21,17 @@
 
 <body>
 <header>
-<div class="container greenBlue_b">
+<div class="nav__bgr">
     <div class="navigation__line row-wrap__media wrapper">
         <a href="#" class="">
             <div class="logo">
             </div>
         </a>
 
-        <p class="slogan roboto_light cyan_c curs_default">Where androids dream
+        <p class="slogan">Where androids dream
             of electric sheep</p>
         <nav id="navigation">
-            <ul class="roboto_light navigation white_c flex">
+            <ul class="navigation">
                 <li><a href="#">Focus Areas</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">About Us</a></li>
@@ -50,36 +50,38 @@
     </button>
 </div>
 </header>
-<section class="head__block white_c">
+<section class="head__block">
     <div class="head__content wrapper">
-        <div class="header-left roboto_light">
-            <div class="f_big h_indent">Distributed computing platform for deep learning
-                application and synthetic data generation</div>
-            <div class="roboto_regular f_medium h_indent">What is Neuromation?</div>
-            <iframe class="header_video" width="550" height="340"
+        <div class="header__left">
+            <h1>Distributed computing platform for deep learning
+                application and synthetic data generation</h1>
+            <h2>What is Neuromation?</h2>
+            <iframe class="header__video" width="550" height="340"
                     src="https://www.youtube.com/embed/yRlLAqXXs_8?ecver=1" allowfullscreen></iframe>
             <div class="dashed"></div>
-            <div class="h_indent roboto_medium uppercase">
-                Neurotoken (NTK) bonus pre-sale <span class="roboto_thin">ends</span>
+            <div class="pre__sale">
+                Neurotoken (NTK) bonus pre-sale <span>ends</span>
             </div>
             <div class="time">
-                <div id="timer" class="roboto_black f_super">
+                <div id="timer">
                     <span id="day">26</span>:<span id="hour">11:</span><span id="minute">30</span>:<span
                         id="second">46</span>
                 </div>
-                <div class="roboto_thin f_medium time_desc"><span>days</span><span>hours</span><span>minutes</span><span>seconds</span>
+                <div class="time__desc"><span>days</span><span>hours</span><span>minutes</span><span>seconds</span>
                 </div>
             </div>
-            <div class="cyan_c roboto_thin f_big h_indent"><a href="#"><i class="icon-download"></i>Download White Paper</a>
+            <div class="white__paper"><a href="#"><i class="icon-download"></i>Download White Paper</a>
             </div>
             <div class="dashed"></div>
-            <div><i class="icon-clock"></i>End date <span class="roboto_medium">28 November</span></div>
+            <div class="end__date"><i class="icon-clock"></i>End date <span>28 November</span></div>
             <div class="dashed"></div>
         </div>
-        <div class="header-right roboto_light">
-            <div class="rating roboto_medium fm_super uppercase">
+        <div class="header__right">
+
+            <div class="rating">
                 <div class="header_rate_wrap">
-                    <div class="inline_b rate_h">
+
+                    <div class="inline_b rate__wrap">
                         <div class="rate__block_h white_c roboto_medium">
                             <div>4.5/5</div>
                         </div>
@@ -87,7 +89,8 @@
                             <div class="icon-ico-bench-reverse"></div>
                         </div>
                     </div>
-                    <div class="inline_b rate_h">
+
+                    <div class="inline_b rate__wrap">
                         <div class="rate__block_h white_c roboto_medium">
                             <div>Positive</div>
                         </div>
@@ -95,7 +98,8 @@
                             <div class="icon-icoraiting-reverse"></div>
                         </div>
                     </div>
-                    <div class="inline_b rate_h">
+
+                    <div class="inline_b rate__wrap">
                         <div class="rate__block_h white_c roboto_medium">
                             <div>8.7/10</div>
                         </div>
@@ -103,14 +107,11 @@
                             <div class="icon-hacked-reverse"></div>
                         </div>
                     </div>
+
                 </div>
             </div>
 
             <div class="form_whitelist">
-                <!--                <div class="ribbon">
-
-                                    bonus
-                                </div>-->
                 <form action="index.html" method="post">
                     <label for="email"></label>
                     <input class="white_c roboto_thin" type="text" id="email"
@@ -122,11 +123,10 @@
                 </form>
 
 
-                <div class="form-text" style="margin-top: 50px">
-                    <div class="ribbon2"><div class="roboto_bold">10%</div> <div
-                            class="roboto_light uppercase">bonus</div></div>
-                    <div style="margin-left: 80px">
-                        <div style="float: left">
+                <div class="form-text">
+                    <div class="ribbon2"><div class="roboto_bold">10%</div>
+                        <div class="roboto_light uppercase">bonus</div></div>
+                    <div class="form-text-elem">
                             <p class="roboto_medium f_big">Join the Whitelist now!</p>
                             As we care who our contributors are and how they
                             want to participate in our Neuromation platform, we
@@ -136,7 +136,6 @@
 
                             <p class="h_indent">Have a questions? Welcome to our <a href="#"><b><u>Telegram!</u></b></a>
                             </p>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -263,8 +262,10 @@
 
         </div>
         <h2 class="uppercase subtitle subTitle_c">Timing bonus:</h2>
-        <div class="block4__step timing__bonus" style="max-width: 500px">
+        <div class="block4__step timing__bonus">
+            <div class="container">
             <canvas id="barChart" width="400" height="400"></canvas>
+            </div>
             <div id="js-legend_bar" class="chart-legend"></div>
         </div>
         <h2 class="uppercase subtitle subTitle_c">Token Details:</h2>
@@ -318,13 +319,17 @@
             </div>
         </div>
         <h2 class="uppercase subtitle subTitle_c">Token Distribution:</h2>
-        <div class="block4__step token__distribution" style="max-width: 780px">
+        <div class="block4__step token__distribution">
+            <div class="container">
             <canvas id="doughnutChart" width="400" height="400"></canvas>
+            </div>
             <div id="js-legend" class="chart-legend"></div>
         </div>
         <h2 class="uppercase subtitle subTitle_c">Token Sale Proceeds Distribution</h2>
-        <div class="block4__step proceeds__distribution" style="max-width: 780px">
+        <div class="block4__step proceeds__distribution">
+            <div class="container">
             <canvas id="secondDoughnutChart" width="400" height="400"></canvas>
+            </div>
             <div id="js-legend_2" class="chart-legend"></div>
         </div>
         <h2 class="uppercase subtitle subTitle_c">Goals:</h2>

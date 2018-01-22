@@ -19,10 +19,11 @@
   }
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
   body {
     font-size:initial;
   }
+  .f_super {font-size: 5em};
   .navigation__line {
     flex-flow: row wrap;
     justify-content: space-between;
@@ -31,10 +32,6 @@
     padding: 100px 0 175px 0;
     background: url(../images/header-background.jpg) repeat-x;
     background-size: cover;
-  }
-  .head__content {
-    flex-flow: row nowrap;
-    justify-content: space-between;
   }
   h1.title {
     font-size:48px;
@@ -53,7 +50,6 @@
     display: block;
     content: "»";
   }
-
   .timing {
     flex-flow: row nowrap;
     align-items: flex-start;
@@ -78,6 +74,25 @@
     }
 
   }
+  .rating {
+    margin: 0 auto;
+  }
+  .rate__wrap {
+    width: auto;
+    margin: 0 30px;
+    line-height: 60px;
+    &:after {
+      width: auto;
+      border: none;
+      opacity: 0.2;
+      line-height: 110px;
+      vertical-align: middle;
+      font-size: 60px;
+      right: -35px;
+      bottom: -25px;
+      content: "|";
+    }
+  }
 
   .token__details {
     display: flex;
@@ -100,9 +115,6 @@
   }
 }
 @media (min-width: 1024px) {
-  body {
-    font-size:initial;
-  }
   #doughnutChart, #secondDoughnutChart {
     position: relative;
     z-index: 1;
@@ -126,7 +138,7 @@
     div {
       display: block;
       &:nth-child(2) {top: -10px; left: -240px}
-      &:nth-child(3) {top: -15px; right: -260px}
+      &:nth-child(3) {top: -13px; right: -260px}
       &:nth-child(4) {top: 80px; right: -260px}
       &:nth-child(5) {top: 175px; right: -260px;}
       &:nth-child(6) {bottom: 92px; right: -260px}
@@ -135,8 +147,8 @@
   .chart2__helpers {
     div {
       display: block;
-      &:nth-child(2) {bottom: 70px; right: -260px}
-      &:nth-child(3) {bottom: 70px; left: -350px}
+      &:nth-child(2) {bottom: 75px; right: -260px}
+      &:nth-child(3) {bottom: 75px; left: -350px}
       &:nth-child(4) {top: 30px; left: -260px}
       &:nth-child(5) {top: 70px; right: -260px}
     }
@@ -243,7 +255,6 @@
   .slogan {
     display: block;
     font-size: 18px;
-    font-weight: 600;
     max-width: 182px;
     margin: 0 6em;
   }
@@ -271,7 +282,18 @@
   .roadmap, .roadmap_wrapper {
     position: relative;
   }
-
+  .head__content {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+  .header__left, .header__right {
+    align-items: flex-start;
+    margin: 0 2%;
+    h1 {
+      text-align: left;
+      margin: 0;
+    }
+  }
   .roadmap:before {
     display: block;
     content: '';
@@ -346,9 +368,6 @@
 }
 
 @media (min-width: 1480px) {
-  body {
-    font-size:initial;
-  }
   .logo {
     margin: 2px;
   }
@@ -361,6 +380,7 @@
     height: 168px;
     font-size: 34px;
     position: absolute;
+    padding: 0;
     top: 0;
     left: -18%;
     background: #1497a3;
@@ -394,5 +414,14 @@
     border-top: 84px solid #1497a3;
     border-right: 20px solid transparent;
     z-index: 1;
+  }
+  .form-text-elem {
+    margin-left: 80px;
+  }
+}
+
+@media (min-width: 1530px) {
+  .header__left, .header__right {
+    margin: 0;
   }
 }

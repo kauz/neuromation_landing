@@ -46,13 +46,13 @@ table {
 .black_c {
   color: #393939; }
 
-.white_c, .rate__block:first-child {
+.white_c, nav__link, ul.navigation, ul.navigation a, .head__block, .rate__block:first-child {
   color: #fff; }
 
 .greenBlue_c, .cross__cutting {
   color: #064355; }
 
-.cyan_c {
+.cyan_c, .slogan, .white__paper {
   color: #49cef2; }
 
 .title {
@@ -67,10 +67,10 @@ table {
 .black_b {
   background-color: #393939; }
 
-.white_b, section {
+.white_b, .nav-btn span, section {
   background-color: #fff; }
 
-.greenBlue_b {
+.greenBlue_b, .nav__bgr {
   background-color: #064355; }
 
 .lightBlue_b, section.block1, section.block3, section.block5 {
@@ -154,19 +154,19 @@ table {
   font-weight: 900;
   src: url("../fonts/roboto/Roboto-Black.eot?") format("eot"), url("../fonts/roboto/Roboto-Black.woff2") format("woff2"), url("../fonts/roboto/Roboto-Black.woff") format("woff"), url("../fonts/roboto/Roboto-Black.ttf") format("truetype"), url("../fonts/roboto/Roboto-Black.svg#Roboto") format("svg"); }
 
-.roboto_thin, .rate_h:after {
+.roboto_thin, .pre__sale span, .time .time__desc, .white__paper, .rate__wrap:after {
   font-family: "Roboto";
   font-weight: 100; }
 
-.roboto_light, .timing, .token__details .token__rect, .cross__cutting {
+.roboto_light, ul.navigation, .slogan, .header__left, .header__left h1, .header__right, .timing, .token__details .token__rect, .cross__cutting {
   font-family: "Roboto";
   font-weight: 300; }
 
-.roboto_regular, .title, .subtitle, .cross__cutting strong {
+.roboto_regular, .title, .subtitle, .header__left h2, .cross__cutting strong {
   font-family: "Roboto";
   font-weight: normal; }
 
-.roboto_medium, .rate, .timing .timing__title, .bar_helper {
+.roboto_medium, .pre__sale, .end__date span, .rating, .rate, .timing .timing__title, .bar_helper {
   font-family: "Roboto";
   font-weight: 500; }
 
@@ -174,7 +174,7 @@ table {
   font-family: "Roboto";
   font-weight: bold; }
 
-.roboto_black, .pinetree:before, .pinetree:after {
+.roboto_black, .time #timer, .pinetree:before, .pinetree:after {
   font-family: "Roboto";
   font-weight: 900; }
 
@@ -553,7 +553,6 @@ nav {
     border-top: 3px solid white; }
   nav__link {
     margin: 20px 0 0;
-    color: #fff;
     text-decoration: none;
     font-size: 18px;
     font-weight: 600;
@@ -571,7 +570,6 @@ nav.--open {
     margin-bottom: 20px; }
 
 ul.navigation {
-  flex-flow: column nowrap;
   flex: 100%;
   transition: height, margin .3s ease;
   z-index: 1;
@@ -581,7 +579,6 @@ ul.navigation li:last-child > a {
   margin-right: 0; }
 
 ul.navigation a {
-  color: #fff;
   margin: 0 25px;
   -webkit-transition: color .3s ease;
   transition: color .3s ease; }
@@ -606,10 +603,8 @@ ul.navigation :hover {
 
 .nav-btn span {
   display: block;
-  position: absolute;
   height: 4px;
   width: 100%;
-  background: #fff;
   opacity: 1;
   left: 0;
   transform: rotate(0deg);
@@ -644,72 +639,27 @@ ul.navigation :hover {
 body {
   font-size: small; }
 
-.pseudo, nav.--open li:before, .rate__block:first-child:before, .rate__block:first-child:after, .rate__block:last-child:after, .timing:before, .timing .timing__node:before, .timing .timing__node:after {
-  display: block;
-  content: ''; }
+.wrapper, .partners {
+  max-width: 1480px;
+  margin: auto; }
 
-.dashed_line, nav.--open li:before {
-  border-bottom: 1px dashed #26a9cc; }
-
-.flex, .navigation__line, .head__content, .rate, .rate__block:last-child, .partners, .timing, .token__details, .roadmap, .roadmap_wrapper {
-  display: flex; }
-
-.flex-column, .navigation__line, .head__content, .timing, .token__details, .roadmap {
-  flex-flow: column nowrap; }
-
-.flex-row, .partners, .roadmap_wrapper {
-  flex-flow: row wrap; }
-
-.justify-center, .partners {
-  justify-content: center; }
-
-.justify-between {
-  justify-content: space-between; }
-
-.justify-start {
-  justify-content: flex-start; }
-
-.justify-end {
-  justify-content: flex-end; }
-
-.flex-center, .navigation__line, .head__content, .token__details {
+section {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
   align-items: center; }
 
-.curs_default {
-  cursor: default; }
+.title, .subtitle {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 32px; }
 
-.f_small {
-  font-size: 0.8em; }
+h1.title {
+  margin: 40px auto; }
 
-.f_regular, .distribution__descr {
-  font-size: 1em; }
-
-.f_medium, .bar_helper div {
-  font-size: 1.375em; }
-
-.f_big {
-  font-size: 1.625em; }
-
-.f_black {
-  font-size: 3em; }
-
-.fm_super {
-  font-size: 3.35em; }
-
-.f_super {
-  font-size: 5em; }
-
-.h_indent, nav.--open li:before, .form-text, .quote_author, .quote_author a, .eth_1, .eth_2, .eth_3, .eth_4, .bagel, .cross__cutting p {
-  margin: 20px 0; }
-
-.inline_b {
-  display: inline-block; }
-
-.relative, .rate__block, .timing, .timing .timing__node, .token__distribution, .proceeds__distribution, .timing__bonus {
-  position: relative; }
-
-.absolute, .rate__block:first-child:before, .rate__block:first-child:after, .rate__block:last-child:after, .timing:before, .timing .timing__node:before, .timing .timing__node:after {
-  position: absolute; }
+h2.subtitle {
+  margin: 20px auto; }
 
 a {
   color: #49cef2; }
@@ -721,15 +671,78 @@ i {
   vertical-align: middle;
   margin-right: 20px; }
 
-.uppercase {
+.pseudo, nav.--open li:before, .rate__wrap:after, .rate__block:first-child:before, .rate__block:first-child:after, .rate__block:last-child:after, .timing:before, .timing .timing__node:before, .timing .timing__node:after {
+  display: block;
+  content: ''; }
+
+.dashed_line, nav.--open li:before, .rate__wrap:after {
+  border-bottom: 1px dashed #26a9cc; }
+
+.flex, ul.navigation, .navigation__line, .head__content, .header__left, .header__right, .time .time__desc, .rate__wrap, .rate__block_h, .rate, .rate__block:last-child, .partners, .timing, .token__details, .roadmap, .roadmap_wrapper {
+  display: flex; }
+
+.flex-column, ul.navigation, .navigation__line, .head__content, .header__left, .header__right, .rate__wrap, .timing, .token__details, .roadmap {
+  flex-flow: column nowrap; }
+
+.flex-row, .time .time__desc, .partners, .roadmap_wrapper {
+  flex-flow: row wrap; }
+
+.justify-center, .partners {
+  justify-content: center; }
+
+.justify-between, .time .time__desc, .rate__wrap {
+  justify-content: space-between; }
+
+.justify-start {
+  justify-content: flex-start; }
+
+.justify-end {
+  justify-content: flex-end; }
+
+.flex-center, .navigation__line, .head__content, .header__left, .header__right, .token__details {
+  align-items: center; }
+
+.curs_default, .slogan {
+  cursor: default; }
+
+.f_small {
+  font-size: 0.8em; }
+
+.f_regular, .distribution__descr {
+  font-size: 1em; }
+
+.f_medium, .header__left h2, .time .time__desc, .bar_helper div {
+  font-size: 1.375em; }
+
+.f_big, .header__left h1, .white__paper, .ribbon2 {
+  font-size: 1.625em; }
+
+.f_black {
+  font-size: 3em; }
+
+.fm_super, .rating {
+  font-size: 3.35em; }
+
+.f_super, .time #timer {
+  font-size: 4em; }
+
+.h_indent, nav.--open li:before, .header__left h1, .header__left h2, .pre__sale, .white__paper, .form-text, .quote_author, .quote_author a, .eth_1, .eth_2, .eth_3, .eth_4, .bagel, .cross__cutting p {
+  margin: 20px 0; }
+
+.inline_b {
+  display: inline-block; }
+
+.relative, .rate__wrap, .rate__block, .timing, .timing .timing__node, .token__distribution, .proceeds__distribution, .timing__bonus {
+  position: relative; }
+
+.absolute, .nav-btn span, .rate__wrap:after, .rate__block:first-child:before, .rate__block:first-child:after, .rate__block:last-child:after, .timing:before, .timing .timing__node:before, .timing .timing__node:after {
+  position: absolute; }
+
+.uppercase, .pre__sale, .rating {
   text-transform: uppercase; }
 
 .underline {
   text-decoration: underline; }
-
-.wrapper, .partners {
-  max-width: 1480px;
-  margin: auto; }
 
 .logo {
   width: 250px;
@@ -754,13 +767,16 @@ i {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16243f', endColorstr='#162645',GradientType=0 );
   /* IE6-9 */ }
 
-.header-left {
+.header__left {
   max-width: 605px; }
+  .header__left h1 {
+    text-align: center;
+    margin: 0 5%; }
 
-.header-right {
+.header__right {
   max-width: 690px; }
 
-.header_video {
+.header__video {
   width: 100%; }
 
 .dashed {
@@ -772,38 +788,25 @@ i {
   max-width: 450px; }
   .time p {
     display: block; }
-  .time .time_desc {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between; }
 
 .header_rate_wrap {
   display: flex;
   flex-flow: row wrap;
   margin-bottom: 20px; }
 
-.rate_h {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  margin: 0 30px;
-  line-height: 60px;
-  position: relative; }
-  .rate_h:after {
-    position: absolute;
-    opacity: 0.2;
-    line-height: 110px;
-    vertical-align: middle;
-    font-size: 60px;
-    right: -35px;
-    top: 0;
-    display: block;
-    content: "|"; }
-  .rate_h:nth-child(2) {
+.rate__wrap {
+  width: 100%;
+  margin: 20px auto;
+  line-height: 60px; }
+  .rate__wrap:after {
+    bottom: -45px;
+    width: 100%;
+    margin: 20px auto; }
+  .rate__wrap:nth-child(2) {
     font-size: 0.63em; }
-  .rate_h:last-child {
+  .rate__wrap:last-child {
     margin-right: 0; }
-  .rate_h:last-child:after {
+  .rate__wrap:last-child:after {
     display: none; }
 
 .rate__block_h {
@@ -850,30 +853,20 @@ i {
 button.submit {
   cursor: pointer; }
 
+.ribbon2 {
+  padding: 10px 0;
+  background-color: #1497a3;
+  width: 100%;
+  text-align: center; }
+  .ribbon2 div {
+    display: inline-block; }
+
 .form-text {
   width: 80%;
   position: relative;
-  text-decoration: underline; }
+  margin-top: 50px; }
   .form-text div > p {
     line-height: 32px; }
-
-section {
-  width: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center; }
-
-.title, .subtitle {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 32px; }
-
-h1.title {
-  margin: 40px auto; }
-
-h2.subtitle {
-  margin: 20px auto; }
 
 .rate {
   font-size: 2.12em;
@@ -992,6 +985,13 @@ h2.subtitle {
   outline: solid 3px rgba(225, 225, 225, 0.4); }
   .token__details .token__rect div {
     margin: 20px; }
+
+@media (max-width: 320px) {
+  .container {
+    width: 280px; } }
+
+.token__distribution, .proceeds__distribution, .timing__bonus {
+  max-width: 600px; }
 
 .bar_helper {
   position: absolute; }

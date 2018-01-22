@@ -6,8 +6,8 @@ nav {
     border-top: 3px solid white;
   }
   &__link {
+    @extend .white_c;
     margin: 20px 0 0;
-    color: #fff;
     text-decoration: none;
     font-size: 18px;
     font-weight: 600;
@@ -38,7 +38,10 @@ nav.--open {
 }
 
 ul.navigation {
-  flex-flow: column nowrap;
+  @extend .flex,
+          .flex-column,
+          .roboto_light,
+          .white_c;
   flex: 100%;
   transition: height, margin .3s ease;
   z-index: 1;
@@ -48,7 +51,7 @@ ul.navigation {
 ul.navigation {
   li:last-child>a {margin-right: 0}
   a {
-    color: #fff;
+    @extend .white_c;
     margin: 0 25px;
     -webkit-transition: color .3s ease;
     transition: color .3s ease;
@@ -75,11 +78,11 @@ ul.navigation {
 }
 
 .nav-btn span {
+  @extend .absolute,
+          .white_b;
   display: block;
-  position: absolute;
   height: 4px;
   width: 100%;
-  background: #fff;
   opacity: 1;
   left: 0;
   transform: rotate(0deg);
