@@ -37,7 +37,7 @@ gulp.task('watch', ['browserSync', 'sass'], function (){
 });
 
 gulp.task('sprite', function () {
-    // Generate our spritesheets
+    // Generate spritesheets
     var iconSpriteData = gulp.src('app/images/icons/*.*').pipe(spritesmith({
         imgName: 'icons.png',
         imgPath: '../images/sprites/icons.png',
@@ -59,16 +59,16 @@ gulp.task('sprite', function () {
         }
     }));
 
-    // Output our images
+    // Output images
     var iconImgStream = iconSpriteData.img.pipe(gulp.dest('app/images/sprites'));
     var logoImgStream = logoSpriteData.img.pipe(gulp.dest('app/images/sprites'));
 
-    // Concatenate our CSS streams
+    // Concatenate CSS streams
     var scssStream = merge(iconSpriteData.css, logoSpriteData.css)
         .pipe(concat('_sprite.scss'))
         .pipe(gulp.dest('app/scss/partials'));
 
-    // Return a merged stream to handle all our `end` events
+    // Return a merged stream to handle all `end` events
     return merge(iconImgStream, logoImgStream, scssStream);
 });
 

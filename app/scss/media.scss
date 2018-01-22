@@ -17,6 +17,7 @@
     border-top: 68px solid rgba(38, 168, 203, 0.1);
     border-right: 20px solid transparent;
   }
+  .icon-arrow {  margin-right: 20px; }
   .bar_helper {
     &:nth-child(1) {top: -20px; left: 44px}
     &:nth-child(2) {top: 95px; left: 150px}
@@ -37,6 +38,9 @@
     padding: 100px 0 175px 0;
     background: url(../images/header-background.jpg) repeat-x;
     background-size: cover;
+  }
+  .logo {
+    margin-left: 20px;
   }
   h1.title {
     font-size:48px;
@@ -249,7 +253,9 @@
     &:nth-child(2) {top: -80px; left: 0;}
     &:nth-child(4) {top: -110px; left: 250px;}
     &:nth-child(6) {bottom: -80px; right: 60px;}
-    &:nth-child(8) {bottom: -80px; right: -300px;}
+    &:nth-child(8) {    bottom: -80px;
+      right: -230px;
+      width: 370px; }
   }
 }
 @media (min-width: 1025px) {
@@ -290,6 +296,7 @@
   .head__content {
     flex-flow: row nowrap;
     justify-content: space-between;
+    align-items: flex-start;
   }
   .header__left, .header__right {
     align-items: flex-start;
@@ -316,7 +323,7 @@
       margin-left: 20%;
       margin-right: 10px;
     }
-    .roadmap_line {
+    .roadmap_dashed {
       left: 0;
       width: calc(34% - 92px);
       top: 43px;
@@ -341,7 +348,7 @@
     .roadmap_icon {
       margin-left: 10px;
     }
-    .roadmap_line {
+    .roadmap_dashed {
       right: 0;
       width: calc(34% - 92px);
       top: 43px;
@@ -359,7 +366,7 @@
     margin: auto;
   }
 
-  .roadmap_line {
+  .roadmap_dashed {
     position: absolute;
     width: calc(20% - 92px);
     border-bottom: 1px dashed #26a9cc;

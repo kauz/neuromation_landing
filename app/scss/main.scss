@@ -16,24 +16,26 @@ body {
   margin: auto;
 }
 section {
-  @extend .white_b;
+  @extend .flex,
+          .flex-column,
+          .justify-center,
+          .flex-center,
+          .white_b,
+          .max-width;
   &.block1, &.block3, &.block5 {@extend .lightBlue_b}
-  width: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
 }
 .title, .subtitle {
-  @extend .roboto_regular;
-  text-align: center;
-  text-transform: uppercase;
+  @extend .roboto_regular,
+          .uppercase,
+          .text-center;
   font-size:32px;
 }
 h1.title {
   margin: 40px auto;
 }
 h2.subtitle {
+  @extend .uppercase,
+          .subTitle_c;
   margin: 20px auto;
 }
 
@@ -64,6 +66,8 @@ i{display: inline-block; vertical-align: middle; margin-right: 20px}
 .absolute {position: absolute}
 .uppercase {text-transform: uppercase};
 .underline {  text-decoration: underline;}
+.text-center {text-align: center;}
+.max-width {width: 100%;}
 
 //HEAD PART
 .nav__bgr {
@@ -71,8 +75,8 @@ i{display: inline-block; vertical-align: middle; margin-right: 20px}
 }
 .navigation__line {
   @extend .flex,
-          .flex-center,
-          .flex-column;
+  .flex-center,
+  .flex-column;
 }
 
 .logo {
@@ -86,8 +90,8 @@ i{display: inline-block; vertical-align: middle; margin-right: 20px}
 
 .slogan {
   @extend .roboto_light,
-          .cyan_c,
-          .curs_default;
+  .cyan_c,
+  .curs_default;
   display: none;
 }
 .head__block {
@@ -102,26 +106,26 @@ i{display: inline-block; vertical-align: middle; margin-right: 20px}
 }
 .head__content {
   @extend .flex,
-          .flex-column,
-          .flex-center;
+  .flex-column,
+  .flex-center;
 }
 .header__left {
   @extend .flex,
-          .flex-column,
-          .flex-center,
-          .roboto_light;
+  .flex-column,
+  .flex-center,
+  .roboto_light;
   max-width: 605px;
   h1 {
     @extend .h_indent,
-          .f_big,
-          .roboto_light;
-    text-align: center;
+            .f_big,
+            .roboto_light,
+            .text-center;
     margin: 0 5%;
   }
   h2 {
     @extend .roboto_regular,
-            .f_medium,
-            .h_indent;
+    .f_medium,
+    .h_indent;
   }
 }
 .header__right {
@@ -141,8 +145,8 @@ i{display: inline-block; vertical-align: middle; margin-right: 20px}
 }
 .pre__sale {
   @extend .h_indent,
-          .roboto_medium,
-          .uppercase;
+  .roboto_medium,
+  .uppercase;
   span {
     @extend .roboto_thin;
   }
@@ -151,24 +155,24 @@ i{display: inline-block; vertical-align: middle; margin-right: 20px}
   max-width: 450px;
   #timer {
     @extend .roboto_black,
-            .f_super;
+    .f_super;
   }
   p {
     display: block;
   }
   .time__desc {
     @extend .flex,
-            .flex-row,
-            .justify-between,
-            .roboto_thin,
-            .f_medium;
+    .flex-row,
+    .justify-between,
+    .roboto_thin,
+    .f_medium;
   }
 }
 .white__paper {
   @extend .cyan_c,
-          .roboto_thin,
-          .f_big,
-          .h_indent;
+  .roboto_thin,
+  .f_big,
+  .h_indent;
 }
 .end__date {
   span {
@@ -176,30 +180,30 @@ i{display: inline-block; vertical-align: middle; margin-right: 20px}
   }
 }
 .header_rate_wrap {
-  display: flex;
-  flex-flow: row wrap;
+  @extend .flex,
+          .flex-row;
   margin-bottom: 20px;
 }
 .rating {
   @extend .roboto_medium,
-          .fm_super,
-          .uppercase;
+  .fm_super,
+  .uppercase;
 }
 .rate__wrap {
   @extend .flex,
-          .flex-column,
-          .justify-between,
-          .relative;
-  width: 100%;
+  .flex-column,
+  .justify-between,
+  .relative,
+  .max-width;
   margin: 20px auto;
   line-height: 60px;
   &:after {
     @extend .absolute,
             .pseudo,
             .roboto_thin,
-            .dashed_line;
+            .dashed_line,
+            .max-width;
     bottom: -45px;
-    width: 100%;
     margin: 20px auto;
   }
   &:nth-child(2) {font-size:0.63em;}
@@ -208,28 +212,29 @@ i{display: inline-block; vertical-align: middle; margin-right: 20px}
 }
 .rate__block_h {
   @extend .flex,
-          .flex-column,
-          .flex-center,
-          .white_c;
+  .flex-column,
+  .flex-center,
+  .roboto_medium,
+  .white_c;
   div {
-    text-align: center;
+    @extend .text-center;
   }
 }
-.form_whitelist {
+.form__whitelist {
   @extend .flex,
-          .flex-column,
-          .flex-center,
-          .justify-center;
-  width: 100%;
+  .flex-column,
+  .flex-center,
+  .justify-center,
+  .max-width;
   height: 530px;
   border-radius: 5px;
   //box-shadow: 3px 4px 54px rgba(0,0,0,0.37);
   background-color: rgba(11, 122, 152, 0.37);
   form {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    width: 100%;
+    @extend .flex,
+            .flex-column,
+            .flex-center,
+            .max-width;
   }
   input, button.submit {
     border: none;
@@ -239,36 +244,56 @@ i{display: inline-block; vertical-align: middle; margin-right: 20px}
     margin: 10px auto;
   }
 }
-.form_whitelist input {
-  text-align: center;
+.form__whitelist input {
+  @extend .roboto_thin,
+          .white_c,
+          .text-center;
   font-size: 1.5em;
   border: 1px solid #fff;
   background: none;
-  &::placeholder {color: #fff;}
+  &::placeholder {@extend .white_c;}
   &:focus{outline:none;}
   &:focus::placeholder{color: transparent}
 }
 button.submit {
+  @extend .cyan_b,
+          .white_c,
+          .roboto_light,
+          .f_big,
+          .submit,
+          .uppercase;
   cursor: pointer;
 }
 .ribbon2 {
-  @extend .f_big;
+  @extend .f_big,
+          .uppercase,
+          .roboto_light,
+          .text-center,
+          .max-width;
   padding: 10px 0;
   background-color: #1497a3;
-  width: 100%;
-  text-align: center;
   div {
-    display: inline-block;
+    @extend .inline_b;
   }
 }
 .form-text {
-  @extend .h_indent;
+  @extend .h_indent,
+          .relative;
   width: 80%;
-  position: relative;
   margin-top:50px;
   div>p {
     line-height: 32px;
   }
+}
+.form-text-elem {
+  p:last-child {
+    @extend .h_indent;
+  }
+}
+.form-text-title {
+  @extend .roboto_medium,
+          .f_big;
+  margin-bottom:20px;
 }
 
 
@@ -276,30 +301,30 @@ button.submit {
 
 .rate {
   @extend .roboto_medium,
-          .flex;
+          .flex,
+          .max-width;
   font-size:2.12em;
   margin: 28px auto;
   max-height: 80px;
-  width: 100%;
 }
 
 .rate__block {
-  @extend .relative;
+  @extend .relative,
+          .inline_b;
   min-height: 38px;
-  display: inline-block;
 }
 .rate__block:first-child {
   @extend .pacificBlue,
-          .white_c;
+  .white_c;
   padding: 10px;
 }
 .rate__block:first-child:before {
   @extend .pseudo,
-          .absolute;
+  .absolute;
 }
 .rate__block:first-child:after {
   @extend .pseudo,
-          .absolute;
+  .absolute;
   bottom: 35%;
   right: -10px;
   border-style: solid;
@@ -307,10 +332,10 @@ button.submit {
   border-width: 10px 0 10px 10px;
 }
 .rate__block:last-child {
-  @extend .flex;
+  @extend .flex,
+          .flex-center,
+          .max-width;
   background-color: rgba(38, 168, 203, 0.1);
-  align-items: center;
-  width: 100%;
 }
 .rate__block:last-child div {
   display: block;
@@ -318,34 +343,38 @@ button.submit {
 }
 .rate__block:last-child:after {
   @extend .pseudo,
-          .absolute;
+  .absolute;
 }
 
 //MEDIA ABOUT NEUROMATION
+.block2 {
+  @extend .roboto_regular;
+}
 .quote {
+  @extend .relative;
   color: #106a8c;
-  position: relative;
   border: 1px dotted #106a8c;
   margin: 30px auto;
 }
 .quote_wrapper {
+  @extend .text-center;
   max-width: 600px;
-  text-align: center;
   padding: 35px 15px;
   margin: 12px;
   background-color: rgba(236, 250, 254, 0.6);
 }
 .quote_text {
+  @extend .f_medium;
   margin: 10px 0;
 }
 .pinetree:before, .pinetree:after  {
-  @extend .roboto_black;
-  position: absolute;
+  @extend .roboto_black,
+          .white_b,
+          .absolute;
   display: block;
   font-size:40px;
   vertical-align: middle;
   line-height:30px;
-  background-color: white;
 }
 
 .quote_author, .quote_author a {
@@ -355,9 +384,9 @@ button.submit {
 
 .partners {
   @extend .wrapper,
-          .flex,
-          .flex-row,
-          .justify-center;
+  .flex,
+  .flex-row,
+  .justify-center;
   margin: 60px 0 100px;
   i {
     margin: 20px;
@@ -366,14 +395,14 @@ button.submit {
 
 //NEUROMATION PLATFORM INTRO
 .frame_wrrapper {
-  width: 100%;
+  @extend .max-width;
   max-width: 601px;
 }
 .block3 .intro {
-  display: flex;
+  @extend .flex,
+          .max-width;
   flex-grow: 2;
   margin: 0 0 40px;
-  width: 100%;
 }
 .block4 h2 {
   margin: 60px auto;
@@ -385,6 +414,10 @@ button.submit {
 
 //TIMING
 
+.block4 {
+  @extend .headBlack_c;
+}
+
 .timing {
   @extend .flex,
   .flex-column,
@@ -393,7 +426,7 @@ button.submit {
   .relative;
   &:before {
     @extend .pseudo,
-            .absolute;
+    .absolute;
     top: 0;
     left: 0;
     height: 100%;
@@ -413,7 +446,7 @@ button.submit {
   }
   .timing__title {
     @extend .subTitle_c,
-            .roboto_medium;
+    .roboto_medium;
   }
 }
 
@@ -441,17 +474,34 @@ button.submit {
   .flex-column,
   .flex-center;
   .token__rect {
-    @extend .roboto_light;
-    width: 100%;
+    @extend .roboto_light,
+            .subTitle_c,
+            .max-width;
     outline: solid 3px rgba(225, 225, 225, 0.4);
     div {
       margin: 20px;
     }
   }
 }
+.token__strong {
+  @extend .roboto_bold,
+          .f_big;
+}
+.token__back {
+  @extend .headBlack_c;
+}
+.token__per {
+  div {
+    @extend .inline_b;
+    p:first-child {
+      @extend .roboto_medium,
+              .f_big;
+    }
+  }
+}
 
 //CHARTS
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   .container {
     width: 280px;
     margin: auto;
@@ -468,11 +518,11 @@ button.submit {
 }
 .bar_helper {
   @extend .roboto_medium,
-          .blue_c5,
-          .absolute;
+  .blue_c5,
+  .absolute;
   div {
     @extend .roboto_bold,
-            .f_medium;
+    .f_medium;
   }
   &:nth-child(1) {top: -20px; left: 74px}
   &:nth-child(2) {top: 48px; left: 157px}
@@ -485,10 +535,10 @@ button.submit {
 
 .distribution__descr {
   @extend .f_regular;
-&:before {
-  content: "⯁";
-  padding-right: 10px;
-}
+  &:before {
+    content: "⯁";
+    padding-right: 10px;
+  }
 }
 .chart1__helpers {
   div {
@@ -509,17 +559,35 @@ button.submit {
 }
 
 //GOALS
-
-.eth_1 {@extend .h_indent; color: #02bef6}
-.eth_2 {@extend .h_indent; color: #069ed2}
-.eth_3 {@extend .h_indent; color: #0787b9}
-.eth_4 {@extend .h_indent; color: #0a73a2}
+.goals_section {
+  @extend .flex,
+          .flex-column,
+          .flex-center,
+          .roboto_regular;
+}
+.circle_wrap {
+  @extend .flex;
+}
+.circle_n {
+  @extend .white_c,
+          .roboto_bold,
+          .f_big;
+}
+.eth_1, .eth_2, .eth_3, .eth_4 {
+  @extend .h_indent,
+          .roboto_medium,
+          .f_medium;;
+}
+.eth_1 {color: #02bef6}
+.eth_2 {color: #069ed2}
+.eth_3 {color: #0787b9}
+.eth_4 {color: #0a73a2}
 
 .bagel {
   @extend .h_indent;
   .inner_circle_n {
+    @extend .max-width;
     padding: 20px 0;
-    width: 100%;
   }
 }
 
@@ -527,7 +595,9 @@ button.submit {
 //NEUROMATION ROADMAP
 .roadmap {
   @extend .flex,
-          .flex-column;
+          .flex-column,
+          .roboto_regular,
+          .greenBlue_c;
   margin: 20px 0 60px;
 }
 .roadmap_wrapper {
@@ -540,7 +610,12 @@ button.submit {
   order: 2;
   width: 63%;
 }
-.roadmap_line {
+.roadmap_subtitle {
+  @extend .roboto_medium,
+          .subTitle_c,
+          .f_medium;
+}
+.roadmap_dashed {
   &:before {
     @extend .inner_circle;
   }
@@ -553,7 +628,7 @@ button.submit {
 }
 .cross__cutting {
   @extend .roboto_light,
-          .greenBlue_c;
+  .greenBlue_c;
   p {
     @extend .h_indent;
   }
@@ -563,20 +638,22 @@ button.submit {
 }
 //FOOTER
 footer {
-  width: 100%;
+  @extend .white_c,
+          .roboto_light,
+          .max-width;
   background: #023f50;
   border-top: #105b70 solid 5px;
   font-size: 0.8em;
   ul {
+    @extend .text-center;
     background: #023f50;
-    text-align: center;
   }
   li {
+    @extend .inline_b;
     list-style: none;
-    display: inline-block;
     line-height: 2.1em;
     &:after {
-      display: inline-block;
+      @extend .inline_b;
       content: "|";
       margin: 10px;
     }
