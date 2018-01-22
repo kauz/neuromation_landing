@@ -157,8 +157,8 @@
     div {
       display: block;
       &:nth-child(2) {bottom: 75px; right: -260px}
-      &:nth-child(3) {bottom: 75px; left: -350px}
-      &:nth-child(4) {top: 30px; left: -260px}
+      &:nth-child(3) {bottom: 75px; left: -240px}
+      &:nth-child(4) {top: 10px; left: -240px; width: 250px}
       &:nth-child(5) {top: 70px; right: -260px}
     }
   }
