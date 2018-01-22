@@ -51,26 +51,26 @@
 @include font-face("Roboto", "../fonts/roboto/Roboto-Black", 900, normal);
 
 .roboto_thin {
-	font-family: "Roboto";
+	font-family: "Roboto", sans-serif;
 	font-weight:100;
 }
 .roboto_light {
-	font-family: "Roboto";
+	font-family: "Roboto", sans-serif;
 	font-weight:300;
 }
 .roboto_regular {
-	font-family: "Roboto";
+	font-family: "Roboto", sans-serif;
 	font-weight:normal;
 }
 .roboto_medium {
-	font-family: "Roboto";
+	font-family: "Roboto", sans-serif;
 	font-weight:500;
 }
 .roboto_bold {
-	font-family: "Roboto";
+	font-family: "Roboto", sans-serif;
 	font-weight:bold;
 }
 .roboto_black {
-	font-family: "Roboto";
+	font-family: "Roboto", sans-serif;
 	font-weight:900;
 }

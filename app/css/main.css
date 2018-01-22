@@ -43,6 +43,66 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/roboto/Roboto-Thin.eot?") format("eot"), url("../fonts/roboto/Roboto-Thin.woff2") format("woff2"), url("../fonts/roboto/Roboto-Thin.woff") format("woff"), url("../fonts/roboto/Roboto-Thin.ttf") format("truetype"), url("../fonts/roboto/Roboto-Thin.svg#Roboto") format("svg"); }
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/roboto/Roboto-Light.eot?") format("eot"), url("../fonts/roboto/Roboto-Light.woff2") format("woff2"), url("../fonts/roboto/Roboto-Light.woff") format("woff"), url("../fonts/roboto/Roboto-Light.ttf") format("truetype"), url("../fonts/roboto/Roboto-Light.svg#Roboto") format("svg"); }
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/roboto/Roboto-Regular.eot?") format("eot"), url("../fonts/roboto/Roboto-Regular.woff2") format("woff2"), url("../fonts/roboto/Roboto-Regular.woff") format("woff"), url("../fonts/roboto/Roboto-Regular.ttf") format("truetype"), url("../fonts/roboto/Roboto-Regular.svg#Roboto") format("svg"); }
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto/Roboto-Medium.eot?") format("eot"), url("../fonts/roboto/Roboto-Medium.woff2") format("woff2"), url("../fonts/roboto/Roboto-Medium.woff") format("woff"), url("../fonts/roboto/Roboto-Medium.ttf") format("truetype"), url("../fonts/roboto/Roboto-Medium.svg#Roboto") format("svg"); }
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/roboto/Roboto-Bold.eot?") format("eot"), url("../fonts/roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/roboto/Roboto-Bold.woff") format("woff"), url("../fonts/roboto/Roboto-Bold.ttf") format("truetype"), url("../fonts/roboto/Roboto-Bold.svg#Roboto") format("svg"); }
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/roboto/Roboto-Black.eot?") format("eot"), url("../fonts/roboto/Roboto-Black.woff2") format("woff2"), url("../fonts/roboto/Roboto-Black.woff") format("woff"), url("../fonts/roboto/Roboto-Black.ttf") format("truetype"), url("../fonts/roboto/Roboto-Black.svg#Roboto") format("svg"); }
+
+.roboto_thin, .pre__sale span, .time .time__desc, .white__paper, .rate__wrap:after, .form__whitelist input {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100; }
+
+.roboto_light, ul.navigation, .slogan, .header__left, .header__left h1, .header__right, button.submit, .ribbon2, .timing, .token__details .token__rect, .cross__cutting, footer {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300; }
+
+.roboto_regular, .title, .subtitle, .header__left h2, .block2, .goals_section, .roadmap, .cross__cutting strong {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal; }
+
+.roboto_medium, .pre__sale, .end__date span, .rating, .rate__block_h, .form-text-title, .rate, .timing .timing__title, .token__per div p:first-child, .bar_helper, .eth_1, .eth_2, .eth_3, .eth_4, .roadmap_subtitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500; }
+
+.roboto_bold, .token__strong, .bar_helper div, .circle_n {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold; }
+
+.roboto_black, .time #timer, .pinetree:before, .pinetree:after {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900; }
+
 .black_c {
   color: #393939; }
 
@@ -117,66 +177,6 @@ table {
 
 .blue_c7 {
   color: #02bff6; }
-
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 100;
-  src: url("../fonts/roboto/Roboto-Thin.eot?") format("eot"), url("../fonts/roboto/Roboto-Thin.woff2") format("woff2"), url("../fonts/roboto/Roboto-Thin.woff") format("woff"), url("../fonts/roboto/Roboto-Thin.ttf") format("truetype"), url("../fonts/roboto/Roboto-Thin.svg#Roboto") format("svg"); }
-
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/roboto/Roboto-Light.eot?") format("eot"), url("../fonts/roboto/Roboto-Light.woff2") format("woff2"), url("../fonts/roboto/Roboto-Light.woff") format("woff"), url("../fonts/roboto/Roboto-Light.ttf") format("truetype"), url("../fonts/roboto/Roboto-Light.svg#Roboto") format("svg"); }
-
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/roboto/Roboto-Regular.eot?") format("eot"), url("../fonts/roboto/Roboto-Regular.woff2") format("woff2"), url("../fonts/roboto/Roboto-Regular.woff") format("woff"), url("../fonts/roboto/Roboto-Regular.ttf") format("truetype"), url("../fonts/roboto/Roboto-Regular.svg#Roboto") format("svg"); }
-
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/roboto/Roboto-Medium.eot?") format("eot"), url("../fonts/roboto/Roboto-Medium.woff2") format("woff2"), url("../fonts/roboto/Roboto-Medium.woff") format("woff"), url("../fonts/roboto/Roboto-Medium.ttf") format("truetype"), url("../fonts/roboto/Roboto-Medium.svg#Roboto") format("svg"); }
-
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: bold;
-  src: url("../fonts/roboto/Roboto-Bold.eot?") format("eot"), url("../fonts/roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/roboto/Roboto-Bold.woff") format("woff"), url("../fonts/roboto/Roboto-Bold.ttf") format("truetype"), url("../fonts/roboto/Roboto-Bold.svg#Roboto") format("svg"); }
-
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 900;
-  src: url("../fonts/roboto/Roboto-Black.eot?") format("eot"), url("../fonts/roboto/Roboto-Black.woff2") format("woff2"), url("../fonts/roboto/Roboto-Black.woff") format("woff"), url("../fonts/roboto/Roboto-Black.ttf") format("truetype"), url("../fonts/roboto/Roboto-Black.svg#Roboto") format("svg"); }
-
-.roboto_thin, .pre__sale span, .time .time__desc, .white__paper, .rate__wrap:after, .form__whitelist input {
-  font-family: "Roboto";
-  font-weight: 100; }
-
-.roboto_light, ul.navigation, .slogan, .header__left, .header__left h1, .header__right, button.submit, .ribbon2, .timing, .token__details .token__rect, .cross__cutting, footer {
-  font-family: "Roboto";
-  font-weight: 300; }
-
-.roboto_regular, .title, .subtitle, .header__left h2, .block2, .goals_section, .roadmap, .cross__cutting strong {
-  font-family: "Roboto";
-  font-weight: normal; }
-
-.roboto_medium, .pre__sale, .end__date span, .rating, .rate__block_h, .form-text-title, .rate, .timing .timing__title, .token__per div p:first-child, .bar_helper, .eth_1, .eth_2, .eth_3, .eth_4, .roadmap_subtitle {
-  font-family: "Roboto";
-  font-weight: 500; }
-
-.roboto_bold, .token__strong, .bar_helper div, .circle_n {
-  font-family: "Roboto";
-  font-weight: bold; }
-
-.roboto_black, .time #timer, .pinetree:before, .pinetree:after {
-  font-family: "Roboto";
-  font-weight: 900; }
 
 .icon-hacked {
   background-image: url(../images/sprites/icons.png);
@@ -597,7 +597,7 @@ ul.navigation :hover {
   transition: .25s ease-in-out; }
 
 .nav-btn span:nth-child(1) {
-  top: 0px; }
+  top: 0; }
 
 .nav-btn span:nth-child(2),
 .nav-btn span:nth-child(3) {
