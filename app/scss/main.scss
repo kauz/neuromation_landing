@@ -207,24 +207,23 @@ i{display: inline-block; vertical-align: middle; margin-right: 20px}
   &:last-child:after {display: none}
 }
 .rate__block_h {
-  @extend .flex;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-
+  @extend .flex,
+          .flex-column,
+          .flex-center,
+          .white_c;
   div {
     text-align: center;
   }
 }
 .form_whitelist {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
+  @extend .flex,
+          .flex-column,
+          .flex-center,
+          .justify-center;
   width: 100%;
   height: 530px;
   border-radius: 5px;
-  box-shadow: 3px 4px 54px rgba(0,0,0,0.37);
+  //box-shadow: 3px 4px 54px rgba(0,0,0,0.37);
   background-color: rgba(11, 122, 152, 0.37);
   form {
     display: flex;
@@ -455,6 +454,11 @@ button.submit {
 @media (max-width: 320px) {
   .container {
     width: 280px;
+    margin: auto;
+  }
+  .chartjs-render-monitor {
+    margin: auto;
+    width: 280px!important;
   }
 }
 
@@ -464,15 +468,15 @@ button.submit {
 }
 .bar_helper {
   @extend .roboto_medium,
-          .blue_c5;
-  position: absolute;
+          .blue_c5,
+          .absolute;
   div {
     @extend .roboto_bold,
             .f_medium;
   }
-  &:nth-child(1) {top: -20px; left: 44px}
-  &:nth-child(2) {top: 95px; left: 150px}
-  &:nth-child(3) {top: 210px; left: 255px}
+  &:nth-child(1) {top: -20px; left: 74px}
+  &:nth-child(2) {top: 48px; left: 157px}
+  &:nth-child(3) {top: 98px; left: 223px}
 }
 
 .donut_path {

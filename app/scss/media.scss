@@ -17,6 +17,11 @@
     border-top: 68px solid rgba(38, 168, 203, 0.1);
     border-right: 20px solid transparent;
   }
+  .bar_helper {
+    &:nth-child(1) {top: -20px; left: 44px}
+    &:nth-child(2) {top: 95px; left: 150px}
+    &:nth-child(3) {top: 210px; left: 255px}
+  }
 }
 
 @media only screen and (min-width: 768px) {

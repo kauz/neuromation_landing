@@ -46,7 +46,7 @@ table {
 .black_c {
   color: #393939; }
 
-.white_c, nav__link, ul.navigation, ul.navigation a, .head__block, .rate__block:first-child {
+.white_c, nav__link, ul.navigation, ul.navigation a, .head__block, .rate__block_h, .rate__block:first-child {
   color: #fff; }
 
 .greenBlue_c, .cross__cutting {
@@ -240,6 +240,7 @@ table {
 
 .icon-arrow {
   margin-left: 20%;
+  margin-right: 0;
   background-image: url(../images/sprites/icons.png);
   background-position: -357px -262px;
   width: 42px;
@@ -678,16 +679,16 @@ i {
 .dashed_line, nav.--open li:before, .rate__wrap:after {
   border-bottom: 1px dashed #26a9cc; }
 
-.flex, ul.navigation, .navigation__line, .head__content, .header__left, .header__right, .time .time__desc, .rate__wrap, .rate__block_h, .rate, .rate__block:last-child, .partners, .timing, .token__details, .roadmap, .roadmap_wrapper {
+.flex, ul.navigation, .navigation__line, .head__content, .header__left, .header__right, .time .time__desc, .rate__wrap, .rate__block_h, .form_whitelist, .rate, .rate__block:last-child, .partners, .timing, .token__details, .roadmap, .roadmap_wrapper {
   display: flex; }
 
-.flex-column, ul.navigation, .navigation__line, .head__content, .header__left, .header__right, .rate__wrap, .timing, .token__details, .roadmap {
+.flex-column, ul.navigation, .navigation__line, .head__content, .header__left, .header__right, .rate__wrap, .rate__block_h, .form_whitelist, .timing, .token__details, .roadmap {
   flex-flow: column nowrap; }
 
 .flex-row, .time .time__desc, .partners, .roadmap_wrapper {
   flex-flow: row wrap; }
 
-.justify-center, .partners {
+.justify-center, .form_whitelist, .partners {
   justify-content: center; }
 
 .justify-between, .time .time__desc, .rate__wrap {
@@ -699,7 +700,7 @@ i {
 .justify-end {
   justify-content: flex-end; }
 
-.flex-center, .navigation__line, .head__content, .header__left, .header__right, .token__details {
+.flex-center, .navigation__line, .head__content, .header__left, .header__right, .rate__block_h, .form_whitelist, .token__details {
   align-items: center; }
 
 .curs_default, .slogan {
@@ -735,7 +736,7 @@ i {
 .relative, .rate__wrap, .rate__block, .timing, .timing .timing__node, .token__distribution, .proceeds__distribution, .timing__bonus {
   position: relative; }
 
-.absolute, .nav-btn span, .rate__wrap:after, .rate__block:first-child:before, .rate__block:first-child:after, .rate__block:last-child:after, .timing:before, .timing .timing__node:before, .timing .timing__node:after {
+.absolute, .nav-btn span, .rate__wrap:after, .rate__block:first-child:before, .rate__block:first-child:after, .rate__block:last-child:after, .timing:before, .timing .timing__node:before, .timing .timing__node:after, .bar_helper {
   position: absolute; }
 
 .uppercase, .pre__sale, .rating {
@@ -809,22 +810,13 @@ i {
   .rate__wrap:last-child:after {
     display: none; }
 
-.rate__block_h {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center; }
-  .rate__block_h div {
-    text-align: center; }
+.rate__block_h div {
+  text-align: center; }
 
 .form_whitelist {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   height: 530px;
   border-radius: 5px;
-  box-shadow: 3px 4px 54px rgba(0, 0, 0, 0.37);
   background-color: rgba(11, 122, 152, 0.37); }
   .form_whitelist form {
     display: flex;
@@ -988,22 +980,26 @@ button.submit {
 
 @media (max-width: 320px) {
   .container {
-    width: 280px; } }
+    width: 280px;
+    margin: auto; }
+  .chartjs-render-monitor {
+    margin: auto;
+    width: 280px !important; } }
 
 .token__distribution, .proceeds__distribution, .timing__bonus {
   max-width: 600px; }
 
-.bar_helper {
-  position: absolute; }
-  .bar_helper:nth-child(1) {
-    top: -20px;
-    left: 44px; }
-  .bar_helper:nth-child(2) {
-    top: 95px;
-    left: 150px; }
-  .bar_helper:nth-child(3) {
-    top: 210px;
-    left: 255px; }
+.bar_helper:nth-child(1) {
+  top: -20px;
+  left: 74px; }
+
+.bar_helper:nth-child(2) {
+  top: 48px;
+  left: 157px; }
+
+.bar_helper:nth-child(3) {
+  top: 98px;
+  left: 223px; }
 
 .donut_path {
   display: none; }
