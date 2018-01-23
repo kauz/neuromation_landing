@@ -442,10 +442,10 @@ button.submit {
 
 .timing {
   @extend .flex,
-  .flex-column,
-  .roboto_light,
-  .headBlack_c,
-  .relative;
+          .flex-column,
+          .roboto_light,
+          .headBlack_c,
+          .relative;
   &:before {
     @extend .pseudo,
     .absolute;
@@ -454,7 +454,8 @@ button.submit {
     height: 100%;
     border-left: 1px dashed #26a9cc;
   }
-  .timing__node {
+
+  &__node {
     @extend .relative;
     margin: 20px 40px;
     &:first-child {
@@ -466,10 +467,12 @@ button.submit {
     &:before {@extend .absolute, .pseudo, .inner_circle; left: -58px; top: 0}
     &:after {@extend .absolute, .pseudo, .circle; left: -55px; top: 3px}
   }
-  .timing__title {
+
+  &__title {
     @extend .subTitle_c,
     .roboto_medium;
   }
+
 }
 
 .inner_circle {
@@ -495,13 +498,25 @@ button.submit {
   @extend .flex,
   .flex-column,
   .flex-center;
-  .token__rect {
-    @extend .roboto_light,
+  .token {
+    @extend .flex,
+            .flex-column,
+            .justify-center,
+            .roboto_light,
             .subTitle_c,
             .max-width;
+    max-width: 220px;
+    min-height: 180px;
+    margin: 10px 0;
     outline: solid 3px rgba(225, 225, 225, 0.4);
+    &:last-child {
+      text-align: center;
+    }
+    &__title {
+      @extend .f_medium;
+    }
     div {
-      margin: 20px;
+      margin: 10px 15px;
     }
   }
 }
@@ -622,33 +637,41 @@ button.submit {
           .roboto_regular,
           .greenBlue_c;
   margin: 20px 0 60px;
-}
-.roadmap_wrapper {
-  @extend .flex,
-          .flex-row;
-  margin: 30px auto;
-  flex-wrap: nowrap
-}
-.roadmap_text {
-  order: 2;
-  width: 63%;
-}
-.roadmap_subtitle {
-  @extend .roboto_medium,
-          .subTitle_c,
-          .f_medium;
-}
-.roadmap_dashed {
-  &:before {
-    @extend .inner_circle;
-  }
-  &:after {
-    @extend .circle;
 
-    width: 24px;
-    height: 24px;
+  &__wrapper {
+    @extend .flex,
+    .flex-row;
+    margin: 30px auto;
+    flex-wrap: nowrap
   }
+
+  &__text {
+    order: 2;
+    width: 63%;
+  }
+
+  &__subtitle {
+    @extend .roboto_medium,
+    .subTitle_c,
+    .f_medium;
+    margin-bottom: 5px;
+  }
+
+  &__dashed {
+    &:before {
+      @extend .inner_circle;
+    }
+    &:after {
+      @extend .circle;
+
+      width: 24px;
+      height: 24px;
+    }
+  }
+
 }
+
+
 .cross__cutting {
   @extend .roboto_light,
   .greenBlue_c;

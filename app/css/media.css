@@ -18,7 +18,16 @@
     left: 150px; }
   .bar_helper:nth-child(3) {
     top: 210px;
-    left: 255px; } }
+    left: 255px; }
+  .token__details {
+    flex-flow: row wrap;
+    justify-content: center; }
+    .token__details .token {
+      max-width: 230px;
+      min-height: 210px;
+      margin: 10px; }
+      .token__details .token div {
+        margin: 10px; } }
 
 @media only screen and (min-width: 768px) {
   body {
@@ -101,20 +110,11 @@
       bottom: -25px;
       content: "|"; }
   .token__details {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around; }
-    .token__details .token__rect {
-      display: flex;
-      flex-flow: column;
-      justify-content: center;
-      width: 340px;
-      height: 300px;
-      margin: 20px 10px; }
-      .token__details .token__rect div {
-        margin: 20px; }
-      .token__details .token__rect:last-child {
-        text-align: center; } }
+    width: 100%; }
+    .token__details .token {
+      max-width: 280px;
+      min-height: 260px;
+      margin: 10px 10px; } }
 
 @media (min-width: 1024px) {
   #doughnutChart, #secondDoughnutChart {
@@ -285,7 +285,7 @@
       white-space: nowrap; } }
 
 @media (min-width: 1280px) {
-  .roadmap, .roadmap_wrapper {
+  .roadmap, .roadmap__wrapper {
     position: relative; }
   .head__content {
     flex-flow: row nowrap;
@@ -305,48 +305,48 @@
     left: 50%;
     height: 100%;
     border-left: 1px dashed #26a9cc; }
-  .roadmap_block:nth-child(odd) {
+  .roadmap__block:nth-child(odd) {
     align-self: flex-end;
     width: 50%; }
-    .roadmap_block:nth-child(odd) .roadmap_icon {
+    .roadmap__block:nth-child(odd) .roadmap__icon {
       margin-left: 20%;
       margin-right: 10px; }
-    .roadmap_block:nth-child(odd) .roadmap_dashed {
+    .roadmap__block:nth-child(odd) .roadmap__dashed {
       left: 0;
       width: calc(34% - 92px);
       top: 43px; }
-      .roadmap_block:nth-child(odd) .roadmap_dashed:before {
+      .roadmap__block:nth-child(odd) .roadmap__dashed:before {
         left: -18px;
         top: -18px; }
-      .roadmap_block:nth-child(odd) .roadmap_dashed:after {
+      .roadmap__block:nth-child(odd) .roadmap__dashed:after {
         left: -15px;
         top: -15px; }
-  .roadmap_block:nth-child(even) {
+  .roadmap__block:nth-child(even) {
     align-self: flex-start;
     width: 50%; }
-    .roadmap_block:nth-child(even) .roadmap_text {
+    .roadmap__block:nth-child(even) .roadmap__text {
       text-align: right;
       margin-left: 1%;
       order: 0; }
-    .roadmap_block:nth-child(even) .roadmap_icon {
+    .roadmap__block:nth-child(even) .roadmap__icon {
       margin-left: 10px; }
-    .roadmap_block:nth-child(even) .roadmap_dashed {
+    .roadmap__block:nth-child(even) .roadmap__dashed {
       right: 0;
       width: calc(34% - 92px);
       top: 43px; }
-      .roadmap_block:nth-child(even) .roadmap_dashed:before {
+      .roadmap__block:nth-child(even) .roadmap__dashed:before {
         right: -18px;
         top: -18px; }
-      .roadmap_block:nth-child(even) .roadmap_dashed:after {
+      .roadmap__block:nth-child(even) .roadmap__dashed:after {
         right: -15px;
         top: -15px; }
-  .roadmap_wrapper {
+  .roadmap__wrapper {
     margin: auto; }
-  .roadmap_dashed {
+  .roadmap__dashed {
     position: absolute;
     width: calc(20% - 92px);
     border-bottom: 1px dashed #26a9cc; }
-    .roadmap_dashed:before, .roadmap_dashed:after {
+    .roadmap__dashed:before, .roadmap__dashed:after {
       display: block;
       content: '';
       position: absolute; } }

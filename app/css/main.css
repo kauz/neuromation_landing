@@ -83,7 +83,7 @@ table {
   font-family: "Roboto", sans-serif;
   font-weight: 100; }
 
-.roboto_light, ul.navigation, .slogan, .header__left, .header__left h1, .header__right, button.submit, .ribbon2, .timing, .token__details .token__rect, .cross__cutting, footer {
+.roboto_light, ul.navigation, .slogan, .header__left, .header__left h1, .header__right, button.submit, .ribbon2, .timing, .token__details .token, .cross__cutting, footer {
   font-family: "Roboto", sans-serif;
   font-weight: 300; }
 
@@ -91,7 +91,7 @@ table {
   font-family: "Roboto", sans-serif;
   font-weight: normal; }
 
-.roboto_medium, .pre__sale, .end__date span, .rating, .rate__block_h, .form-text-title, .rate, .timing .timing__title, .token__per div p:first-child, .bar_helper, .eth_1, .eth_2, .eth_3, .eth_4, .roadmap_subtitle {
+.roboto_medium, .pre__sale, .end__date span, .rating, .rate__block_h, .form-text-title, .rate, .timing__title, .token__per div p:first-child, .bar_helper, .eth_1, .eth_2, .eth_3, .eth_4, .roadmap__subtitle {
   font-family: "Roboto", sans-serif;
   font-weight: 500; }
 
@@ -118,7 +118,7 @@ table {
 .title {
   color: #062769; }
 
-.subTitle_c, div.subtitle, .timing .timing__title, .token__details .token__rect, .roadmap_subtitle {
+.subTitle_c, div.subtitle, .timing__title, .token__details .token, .roadmap__subtitle {
   color: #26a9cc; }
 
 .headBlack_c, .block4, .timing, .token__back {
@@ -648,23 +648,23 @@ i {
   vertical-align: middle;
   margin-right: 20px; }
 
-.pseudo, nav.__open li:before, .rate__wrap:after, .rate__block:first-child:before, .rate__block:first-child:after, .rate__block:last-child:after, .timing:before, .timing .timing__node:before, .timing .timing__node:after {
+.pseudo, nav.__open li:before, .rate__wrap:after, .rate__block:first-child:before, .rate__block:first-child:after, .rate__block:last-child:after, .timing:before, .timing__node:before, .timing__node:after {
   display: block;
   content: ''; }
 
 .dashed_line, nav.__open li:before, .rate__wrap:after {
   border-bottom: 1px dashed #26a9cc; }
 
-.flex, nav.__open, ul.navigation, section, .navigation__line, .head__content, .header__left, .header__right, .time .time__desc, .header_rate_wrap, .rate__wrap, .rate__block_h, .form__whitelist, .form__whitelist form, .rate, .rate__block:first-child, .rate__block:last-child, .partners, .timing, .token__details, .goals_section, .circle_wrap, .roadmap, .roadmap_wrapper {
+.flex, nav.__open, ul.navigation, section, .navigation__line, .head__content, .header__left, .header__right, .time .time__desc, .header_rate_wrap, .rate__wrap, .rate__block_h, .form__whitelist, .form__whitelist form, .rate, .rate__block:first-child, .rate__block:last-child, .partners, .timing, .token__details, .token__details .token, .goals_section, .circle_wrap, .roadmap, .roadmap__wrapper {
   display: flex; }
 
-.flex-column, ul.navigation, section, .navigation__line, .head__content, .header__left, .header__right, .rate__wrap, .rate__block_h, .form__whitelist, .form__whitelist form, .timing, .token__details, .goals_section, .roadmap {
+.flex-column, ul.navigation, section, .navigation__line, .head__content, .header__left, .header__right, .rate__wrap, .rate__block_h, .form__whitelist, .form__whitelist form, .timing, .token__details, .token__details .token, .goals_section, .roadmap {
   flex-flow: column nowrap; }
 
-.flex-row, .time .time__desc, .header_rate_wrap, .partners, .roadmap_wrapper {
+.flex-row, .time .time__desc, .header_rate_wrap, .partners, .roadmap__wrapper {
   flex-flow: row wrap; }
 
-.justify-center, section, .navigation__line, .form__whitelist, .partners {
+.justify-center, section, .navigation__line, .form__whitelist, .partners, .token__details .token {
   justify-content: center; }
 
 .justify-between, .time .time__desc, .rate__wrap {
@@ -688,7 +688,7 @@ i {
 .f_regular, .distribution__descr {
   font-size: 1em; }
 
-.f_medium, .header__left h2, .time .time__desc, .rate, .quote_text, .bar_helper div, .eth_1, .eth_2, .eth_3, .eth_4, .roadmap_subtitle {
+.f_medium, .header__left h2, .time .time__desc, .rate, .quote_text, .token__details .token__title, .bar_helper div, .eth_1, .eth_2, .eth_3, .eth_4, .roadmap__subtitle {
   font-size: 1.375em; }
 
 .f_big, .header__left h1, .white__paper, button.submit, .ribbon2, .form-text-title, .token__strong, .token__per div p:first-child, .circle_n {
@@ -709,10 +709,10 @@ i {
 .inline_b, .ribbon2 div, .rate__block, .token__per div, footer li, footer li:after {
   display: inline-block; }
 
-.relative, .rate__wrap, .form-text, .rate__block, .quote, .frame_wrrapper, .timing, .timing .timing__node, .token__distribution, .proceeds__distribution, .timing__bonus {
+.relative, .rate__wrap, .form-text, .rate__block, .quote, .frame_wrrapper, .timing, .timing__node, .token__distribution, .proceeds__distribution, .timing__bonus {
   position: relative; }
 
-.absolute, .nav-btn, .nav-btn span, .rate__wrap:after, .rate__block:first-child:before, .rate__block:first-child:after, .rate__block:last-child:after, .pinetree:before, .pinetree:after, .frame_wrrapper iframe, .timing:before, .timing .timing__node:before, .timing .timing__node:after, .bar_helper {
+.absolute, .nav-btn, .nav-btn span, .rate__wrap:after, .rate__block:first-child:before, .rate__block:first-child:after, .rate__block:last-child:after, .pinetree:before, .pinetree:after, .frame_wrrapper iframe, .timing:before, .timing__node:before, .timing__node:after, .bar_helper {
   position: absolute; }
 
 .uppercase, .title, .subtitle, div.subtitle, .pre__sale, .rating, button.submit, .ribbon2 {
@@ -724,7 +724,7 @@ i {
 .text-center, .title, .subtitle, .header__left h1, .rate__block_h div, .form__whitelist input, .ribbon2, .quote_wrapper, footer ul {
   text-align: center; }
 
-.max-width, section, .dashed, .rate__wrap, .rate__wrap:after, .form__whitelist, .form__whitelist form, .ribbon2, .rate__block:last-child, .frame_wrrapper, .intro_wrapper, .token__details .token__rect, .bagel .inner_circle_n, footer {
+.max-width, section, .dashed, .rate__wrap, .rate__wrap:after, .form__whitelist, .form__whitelist form, .ribbon2, .rate__block:last-child, .frame_wrrapper, .intro_wrapper, .token__details .token, .bagel .inner_circle_n, footer {
   width: 100%; }
 
 .logo {
@@ -912,20 +912,20 @@ button.submit {
   height: 100%;
   border-left: 1px dashed #26a9cc; }
 
-.timing .timing__node {
+.timing__node {
   margin: 20px 40px; }
-  .timing .timing__node:first-child {
+  .timing__node:first-child {
     margin-top: 0; }
-  .timing .timing__node:last-child {
+  .timing__node:last-child {
     margin-bottom: 0; }
-  .timing .timing__node:before {
+  .timing__node:before {
     left: -58px;
     top: 0; }
-  .timing .timing__node:after {
+  .timing__node:after {
     left: -55px;
     top: 3px; }
 
-.inner_circle, .timing .timing__node:before, .roadmap_dashed:before {
+.inner_circle, .timing__node:before, .roadmap__dashed:before {
   border: solid 3px #26a9cc;
   border-radius: 50%;
   max-width: 36px;
@@ -933,7 +933,7 @@ button.submit {
   height: 30px;
   background: #fff; }
 
-.circle, .timing .timing__node:after, .roadmap_dashed:after {
+.circle, .timing__node:after, .roadmap__dashed:after {
   display: block;
   width: 24px;
   height: 24px;
@@ -941,10 +941,15 @@ button.submit {
   border-radius: 50%;
   background: #26a9cc; }
 
-.token__details .token__rect {
+.token__details .token {
+  max-width: 220px;
+  min-height: 180px;
+  margin: 10px 0;
   outline: solid 3px rgba(225, 225, 225, 0.4); }
-  .token__details .token__rect div {
-    margin: 20px; }
+  .token__details .token:last-child {
+    text-align: center; }
+  .token__details .token div {
+    margin: 10px 15px; }
 
 @media (max-width: 400px) {
   .container {
@@ -993,18 +998,17 @@ button.submit {
 
 .roadmap {
   margin: 20px 0 60px; }
-
-.roadmap_wrapper {
-  margin: 30px auto;
-  flex-wrap: nowrap; }
-
-.roadmap_text {
-  order: 2;
-  width: 63%; }
-
-.roadmap_dashed:after {
-  width: 24px;
-  height: 24px; }
+  .roadmap__wrapper {
+    margin: 30px auto;
+    flex-wrap: nowrap; }
+  .roadmap__text {
+    order: 2;
+    width: 63%; }
+  .roadmap__subtitle {
+    margin-bottom: 5px; }
+  .roadmap__dashed:after {
+    width: 24px;
+    height: 24px; }
 
 footer {
   background: #023f50;
