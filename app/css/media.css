@@ -11,14 +11,14 @@
   .icon-arrow {
     margin-right: 20px; }
   .bar_helper:nth-child(1) {
-    top: -20px;
-    left: 44px; }
+    top: -24px;
+    left: 37px; }
   .bar_helper:nth-child(2) {
     top: 95px;
     left: 150px; }
   .bar_helper:nth-child(3) {
-    top: 210px;
-    left: 255px; }
+    top: 215px;
+    left: 261px; }
   .token__details {
     flex-flow: row wrap;
     justify-content: center; }

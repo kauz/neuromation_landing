@@ -965,15 +965,15 @@ button.submit {
 
 .bar_helper:nth-child(1) {
   top: -20px;
-  left: 74px; }
+  left: 34px; }
 
 .bar_helper:nth-child(2) {
-  top: 48px;
-  left: 157px; }
+  top: 62px;
+  left: 106px; }
 
 .bar_helper:nth-child(3) {
-  top: 98px;
-  left: 223px; }
+  top: 141px;
+  left: 181px; }
 
 .donut_path {
   display: none; }

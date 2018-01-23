@@ -50,12 +50,11 @@ var myChart = new Chart(ctx, {
             }],
             xAxes: [{
                 categoryPercentage: 1,
-                barThickness: 100,
                 ticks: {
                     beginAtZero: true,
                     display: true,
                     fontFamily: "Roboto",
-                    fontSize: 18
+                    fontSize: 13
                 },
                 gridLines: {
                     drawTicks: false,
