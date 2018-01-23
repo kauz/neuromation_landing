@@ -75,33 +75,33 @@
     align-items: flex-start; }
     .timing:before {
       top: 0;
-      left: 0;
+      left: 58px;
       height: auto;
-      width: 100%;
+      width: 80%;
       border-left: 0;
       border-bottom: 1px dashed #26a9cc; }
     .timing .timing__node {
-      margin: 20px 60px; }
+      margin: 30px 60px; }
       .timing .timing__node:nth-child(1):before, .timing .timing__node:nth-child(2):before {
-        left: 0;
-        top: -38px; }
+        left: 24px;
+        top: -48px; }
       .timing .timing__node:nth-child(1):after, .timing .timing__node:nth-child(2):after {
-        left: 3px;
-        top: -35px; }
+        left: 27px;
+        top: -45px; }
       .timing .timing__node:first-child {
-        margin-top: 20px;
-        margin-left: 0; }
+        margin-left: 0;
+        margin-right: 10px; }
       .timing .timing__node:last-child {
         margin-bottom: 20px;
         margin-right: 0; }
     .timing #tm_last:before {
       left: initial;
-      right: 0;
-      top: -38px; }
+      right: 40px;
+      top: -48px; }
     .timing #tm_last:after {
       left: initial;
-      right: 3px;
-      top: -35px; }
+      right: 43px;
+      top: -45px; }
   .rating {
     margin: 0 auto; }
   .rate__wrap {

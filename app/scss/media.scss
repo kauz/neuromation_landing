@@ -79,22 +79,22 @@
     align-items: flex-start;
     &:before {
       top: 0;
-      left: 0;
+      left: 58px;
       height: auto;
-      width: 100%;
+      width: 80%;
       border-left: 0;
       border-bottom: 1px dashed #26a9cc;
     }
     .timing__node {
-      margin: 20px 60px;
-      &:nth-child(1):before, &:nth-child(2):before {left: 0; top: -38px}
-      &:nth-child(1):after, &:nth-child(2):after {left: 3px; top: -35px}
-      &:first-child {  margin-top: 20px;  margin-left: 0; }
+      margin: 30px 60px;
+      &:nth-child(1):before, &:nth-child(2):before {left: 24px; top: -48px}
+      &:nth-child(1):after, &:nth-child(2):after {left: 27px; top: -45px}
+      &:first-child {  margin-left: 0;  margin-right:10px;}
       &:last-child {  margin-bottom: 20px; margin-right: 0;  }
     }
     #tm_last {
-      &:before {left: initial; right: 0; top: -38px}
-      &:after {left: initial; right: 3px; top: -35px}
+      &:before {left: initial; right: 40px; top: -48px}
+      &:after {left: initial; right: 43px; top: -45px}
     }
 
   }
