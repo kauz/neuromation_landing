@@ -689,7 +689,7 @@ i {
 .f_regular, .distribution__descr {
   font-size: 1em; }
 
-.f_medium, .header__left h2, .time .time__desc, .rate, .quote_text, .token__details .token__title, .bar_helper div, .eth_1, .eth_2, .eth_3, .eth_4, .roadmap__subtitle {
+.f_medium, .header__left h2, .time .time__desc, .rate, .quote_text, .token__details .token__title, .bar_helper div, .distribution__descr, .eth_1, .eth_2, .eth_3, .eth_4, .roadmap__subtitle {
   font-size: 1.375em; }
 
 .f_big, .header__left h1, .white__paper, button.submit, .ribbon2, .form-text-title, .token__strong, .token__per div p:first-child, .circle_n {
@@ -704,7 +704,7 @@ i {
 .f_super, .time #timer {
   font-size: 4em; }
 
-.h_indent, nav.__open li:before, .header__left h1, .header__left h2, .pre__sale, .white__paper, .ribbon2, .form-text, .form-text-elem p:last-child, .quote_author, .quote_author a, .intro_wrapper, .eth_1, .eth_2, .eth_3, .eth_4, .bagel, .cross__cutting p {
+.h_indent, nav.__open li:before, .header__left h1, .header__left h2, .pre__sale, .white__paper, .ribbon2, .form-text, .form-text-elem p:last-child, .quote_author, .quote_author a, .intro_wrapper, .distribution, .eth_1, .eth_2, .eth_3, .eth_4, .bagel, .cross__cutting p {
   margin: 20px 0; }
 
 .inline_b, .ribbon2 div, .rate__block, .token__per div, footer li, footer li:after {
@@ -725,7 +725,7 @@ i {
 .text-center, .title, .subtitle, .header__left h1, .rate__block_h div, .form__whitelist input, .ribbon2, .quote_wrapper, footer ul {
   text-align: center; }
 
-.max-width, section, .dashed, .rate__wrap, .rate__wrap:after, .form__whitelist, .form__whitelist form, .ribbon2, .rate__block:last-child, .frame_wrrapper, .intro_wrapper, .token__details .token, .bagel .inner_circle_n, footer {
+.max-width, section, .dashed, .rate__wrap, .rate__wrap:after, .form__whitelist, .form__whitelist form, .ribbon2, .rate__block:last-child, .frame_wrrapper, .intro_wrapper, .token__details .token, .distribution, .bagel .inner_circle_n, footer {
   width: 100%; }
 
 .logo {
@@ -991,9 +991,11 @@ button.submit {
 .donut_path {
   display: none; }
 
-.distribution__descr:before {
-  content: "⯁";
-  padding-right: 10px; }
+.distribution__descr {
+  padding: 0 15px; }
+  .distribution__descr:before {
+    content: "⯁";
+    padding-right: 10px; }
 
 .circle_n {
   padding: 0 15px; }

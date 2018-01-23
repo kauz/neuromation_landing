@@ -580,14 +580,19 @@ button.submit {
 .donut_path {
   display: none;
 }
-
-.distribution__descr {
+.distribution {
+@extend .h_indent,
+        .max-width;
+  &__descr {
   @extend .f_regular,
-          .roboto_regular;
+          .roboto_regular,
+          .f_medium;
+  padding: 0 15px;
   &:before {
     content: "⯁";
     padding-right: 10px;
   }
+}
 }
 .chart1__helpers {
   div {
