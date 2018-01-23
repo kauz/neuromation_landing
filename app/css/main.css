@@ -627,7 +627,8 @@ body {
 
 .wrapper, .partners {
   max-width: 1480px;
-  margin: auto; }
+  margin: auto;
+  padding: 0 15px; }
 
 .title, .subtitle {
   font-size: 32px; }
@@ -981,6 +982,12 @@ button.submit {
   content: "⯁";
   padding-right: 10px; }
 
+.circle_n {
+  padding: 0 15px; }
+
+.eth {
+  padding: 0 15px; }
+
 .eth_1 {
   color: #02bef6; }
 
@@ -1009,6 +1016,9 @@ button.submit {
   .roadmap__dashed:after {
     width: 24px;
     height: 24px; }
+
+.cross__cutting {
+  margin: 40px auto; }
 
 footer {
   background: #023f50;

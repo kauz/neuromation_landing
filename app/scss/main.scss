@@ -14,6 +14,7 @@ body {
 .wrapper {
   max-width: 1480px;
   margin: auto;
+  padding: 0 15px;
 }
 section {
   @extend .flex,
@@ -610,11 +611,15 @@ button.submit {
   @extend .white_c,
           .roboto_bold,
           .f_big;
+  padding: 0 15px;
+}
+.eth {
+  padding: 0 15px;
 }
 .eth_1, .eth_2, .eth_3, .eth_4 {
   @extend .h_indent,
           .roboto_medium,
-          .f_medium;;
+          .f_medium;
 }
 .eth_1 {color: #02bef6}
 .eth_2 {color: #069ed2}
@@ -674,7 +679,8 @@ button.submit {
 
 .cross__cutting {
   @extend .roboto_light,
-  .greenBlue_c;
+          .greenBlue_c;
+  margin: 40px auto;
   p {
     @extend .h_indent;
   }
