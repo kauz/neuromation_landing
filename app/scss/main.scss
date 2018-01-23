@@ -303,8 +303,7 @@ button.submit {
 .rate {
   @extend .roboto_medium,
           .flex,
-          .max-width;
-  font-size:2.12em;
+          .f_medium;
   margin: 28px auto;
   max-height: 80px;
 }
@@ -316,12 +315,18 @@ button.submit {
 }
 .rate__block:first-child {
   @extend .pacificBlue,
-  .white_c;
+  .white_c,
+  .flex,
+  .flex-center;
   padding: 10px;
 }
 .rate__block:first-child:before {
   @extend .pseudo,
   .absolute;
+  bottom: 0;
+  left: -20px;
+  border-bottom: 58px solid #26a9cc;
+  border-left: 20px solid transparent;
 }
 .rate__block:first-child:after {
   @extend .pseudo,
@@ -345,6 +350,10 @@ button.submit {
 .rate__block:last-child:after {
   @extend .pseudo,
   .absolute;
+  bottom: 0;
+  right: -20px;
+  border-top: 58px solid rgba(38, 168, 203, 0.1);
+  border-right: 20px solid transparent;
 }
 
 //MEDIA ABOUT NEUROMATION

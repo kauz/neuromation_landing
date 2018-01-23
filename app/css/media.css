@@ -5,15 +5,9 @@
   .rate__block:first-child {
     padding: 15px; }
   .rate__block:first-child:before {
-    bottom: 0;
-    left: -20px;
-    border-bottom: 68px solid #26a9cc;
-    border-left: 20px solid transparent; }
+    border-bottom: 68px solid #26a9cc; }
   .rate__block:last-child:after {
-    bottom: 0;
-    right: -20px;
-    border-top: 68px solid rgba(38, 168, 203, 0.1);
-    border-right: 20px solid transparent; }
+    border-top: 68px solid rgba(38, 168, 203, 0.1); }
   .icon-arrow {
     margin-right: 20px; }
   .bar_helper:nth-child(1) {

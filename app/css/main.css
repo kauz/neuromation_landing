@@ -239,7 +239,7 @@ table {
   height: 31px; }
 
 .icon-arrow {
-  margin-left: 20%;
+  margin-left: 10px;
   margin-right: 0;
   background-image: url(../images/sprites/icons.png);
   background-position: -357px -262px;
@@ -655,7 +655,7 @@ i {
 .dashed_line, nav.__open li:before, .rate__wrap:after {
   border-bottom: 1px dashed #26a9cc; }
 
-.flex, nav.__open, ul.navigation, section, .navigation__line, .head__content, .header__left, .header__right, .time .time__desc, .header_rate_wrap, .rate__wrap, .rate__block_h, .form__whitelist, .form__whitelist form, .rate, .rate__block:last-child, .partners, .timing, .token__details, .goals_section, .circle_wrap, .roadmap, .roadmap_wrapper {
+.flex, nav.__open, ul.navigation, section, .navigation__line, .head__content, .header__left, .header__right, .time .time__desc, .header_rate_wrap, .rate__wrap, .rate__block_h, .form__whitelist, .form__whitelist form, .rate, .rate__block:first-child, .rate__block:last-child, .partners, .timing, .token__details, .goals_section, .circle_wrap, .roadmap, .roadmap_wrapper {
   display: flex; }
 
 .flex-column, ul.navigation, section, .navigation__line, .head__content, .header__left, .header__right, .rate__wrap, .rate__block_h, .form__whitelist, .form__whitelist form, .timing, .token__details, .goals_section, .roadmap {
@@ -676,7 +676,7 @@ i {
 .justify-end {
   justify-content: flex-end; }
 
-.flex-center, section, .head__content, .header__left, .header__right, .rate__block_h, .form__whitelist, .form__whitelist form, .rate__block:last-child, .token__details, .goals_section {
+.flex-center, section, .head__content, .header__left, .header__right, .rate__block_h, .form__whitelist, .form__whitelist form, .rate__block:first-child, .rate__block:last-child, .token__details, .goals_section {
   align-items: center; }
 
 .curs_default, .slogan {
@@ -688,7 +688,7 @@ i {
 .f_regular, .distribution__descr {
   font-size: 1em; }
 
-.f_medium, .header__left h2, .time .time__desc, .quote_text, .bar_helper div, .eth_1, .eth_2, .eth_3, .eth_4, .roadmap_subtitle {
+.f_medium, .header__left h2, .time .time__desc, .rate, .quote_text, .bar_helper div, .eth_1, .eth_2, .eth_3, .eth_4, .roadmap_subtitle {
   font-size: 1.375em; }
 
 .f_big, .header__left h1, .white__paper, button.submit, .ribbon2, .form-text-title, .token__strong, .token__per div p:first-child, .circle_n {
@@ -724,7 +724,7 @@ i {
 .text-center, .title, .subtitle, .header__left h1, .rate__block_h div, .form__whitelist input, .ribbon2, .quote_wrapper, footer ul {
   text-align: center; }
 
-.max-width, section, .dashed, .rate__wrap, .rate__wrap:after, .form__whitelist, .form__whitelist form, .ribbon2, .rate, .rate__block:last-child, .frame_wrrapper, .intro_wrapper, .token__details .token__rect, .bagel .inner_circle_n, footer {
+.max-width, section, .dashed, .rate__wrap, .rate__wrap:after, .form__whitelist, .form__whitelist form, .ribbon2, .rate__block:last-child, .frame_wrrapper, .intro_wrapper, .token__details .token__rect, .bagel .inner_circle_n, footer {
   width: 100%; }
 
 .logo {
@@ -822,7 +822,6 @@ button.submit {
   margin-bottom: 20px; }
 
 .rate {
-  font-size: 2.12em;
   margin: 28px auto;
   max-height: 80px; }
 
@@ -831,6 +830,12 @@ button.submit {
 
 .rate__block:first-child {
   padding: 10px; }
+
+.rate__block:first-child:before {
+  bottom: 0;
+  left: -20px;
+  border-bottom: 58px solid #26a9cc;
+  border-left: 20px solid transparent; }
 
 .rate__block:first-child:after {
   bottom: 35%;
@@ -845,6 +850,12 @@ button.submit {
 .rate__block:last-child div {
   display: block;
   margin-left: 20px; }
+
+.rate__block:last-child:after {
+  bottom: 0;
+  right: -20px;
+  border-top: 58px solid rgba(38, 168, 203, 0.1);
+  border-right: 20px solid transparent; }
 
 .quote {
   color: #106a8c;
