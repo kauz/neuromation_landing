@@ -58,7 +58,7 @@ i{display: inline-block; vertical-align: middle; margin-right: 20px}
 .f_medium {font-size: 1.375em};//22px
 .f_big {font-size: 1.625em};//26px
 .f_black {font-size: 3em};
-.fm_super {font-size: 3.35em};
+.fm_super {font-size: 2.35em};
 .f_super {font-size: 4em};
 .h_indent {margin: 20px 0}
 .inline_b {display: inline-block}
@@ -97,7 +97,7 @@ i{display: inline-block; vertical-align: middle; margin-right: 20px}
 .head__block {
   @extend .white_c;
   display: block;
-  padding: 100px 0 175px 0;
+  padding: 20px 0;
   background: url(../images/header-background.jpg) repeat-x;
   background-size: 100%;
   background: #16243f; /* Old browsers */
@@ -268,9 +268,14 @@ button.submit {
           .uppercase,
           .roboto_light,
           .text-center,
-          .max-width;
+          .max-width,
+          .h_indent;
   padding: 10px 0;
   background-color: #1497a3;
+  a {
+    @extend .white_c;
+    &:hover {transition: color 0.5s ease; color: #e2e889}
+  }
   div {
     @extend .inline_b;
   }
@@ -279,10 +284,7 @@ button.submit {
   @extend .h_indent,
           .relative;
   width: 80%;
-  margin-top:50px;
-  div>p {
-    line-height: 32px;
-  }
+  padding:10px 0;
 }
 .form-text-elem {
   p:last-child {

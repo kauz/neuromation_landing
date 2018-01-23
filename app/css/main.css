@@ -106,7 +106,7 @@ table {
 .black_c {
   color: #393939; }
 
-.white_c, ul.navigation, ul.navigation a, .head__block, .rate__block_h, .form__whitelist input, .form__whitelist input::placeholder, button.submit, .rate__block:first-child, .circle_n, footer {
+.white_c, ul.navigation, ul.navigation a, .head__block, .rate__block_h, .form__whitelist input, .form__whitelist input::placeholder, button.submit, .ribbon2 a, .rate__block:first-child, .circle_n, footer {
   color: #fff; }
 
 .greenBlue_c, .roadmap, .cross__cutting {
@@ -698,12 +698,12 @@ i {
   font-size: 3em; }
 
 .fm_super, .rating {
-  font-size: 3.35em; }
+  font-size: 2.35em; }
 
 .f_super, .time #timer {
   font-size: 4em; }
 
-.h_indent, nav.__open li:before, .header__left h1, .header__left h2, .pre__sale, .white__paper, .form-text, .form-text-elem p:last-child, .quote_author, .quote_author a, .intro_wrapper, .eth_1, .eth_2, .eth_3, .eth_4, .bagel, .cross__cutting p {
+.h_indent, nav.__open li:before, .header__left h1, .header__left h2, .pre__sale, .white__paper, .ribbon2, .form-text, .form-text-elem p:last-child, .quote_author, .quote_author a, .intro_wrapper, .eth_1, .eth_2, .eth_3, .eth_4, .bagel, .cross__cutting p {
   margin: 20px 0; }
 
 .inline_b, .ribbon2 div, .rate__block, .token__per div, footer li, footer li:after {
@@ -740,7 +740,7 @@ i {
 
 .head__block {
   display: block;
-  padding: 100px 0 175px 0;
+  padding: 20px 0;
   background: url(../images/header-background.jpg) repeat-x;
   background-size: 100%;
   background: #16243f;
@@ -810,12 +810,13 @@ button.submit {
 .ribbon2 {
   padding: 10px 0;
   background-color: #1497a3; }
+  .ribbon2 a:hover {
+    transition: color 0.5s ease;
+    color: #e2e889; }
 
 .form-text {
   width: 80%;
-  margin-top: 50px; }
-  .form-text div > p {
-    line-height: 32px; }
+  padding: 10px 0; }
 
 .form-text-title {
   margin-bottom: 20px; }

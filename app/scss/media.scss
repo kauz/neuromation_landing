@@ -30,6 +30,7 @@
     font-size:initial;
   }
   .f_super {font-size: 5em};
+  .fm_super {font-size: 3.35em};
   .navigation__line {
     flex-flow: row wrap;
     justify-content: space-between;
@@ -386,6 +387,9 @@
   .logo {
     margin: 2px;
   }
+  .form-text {
+    margin-top:50px;
+  }
   .ribbon2 {
     display: flex;
     flex-flow: column nowrap;
@@ -394,8 +398,9 @@
     width: 140px;
     height: 168px;
     font-size: 34px;
-    position: absolute;
     padding: 0;
+    margin: 0;
+    position: absolute;
     top: 0;
     left: -18%;
     background: #1497a3;
