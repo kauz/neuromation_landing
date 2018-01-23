@@ -170,10 +170,15 @@
     overflow: hidden;
     z-index: 0;
   }
-  .distribution__descr {
-    position: absolute;
-    &:before {
-      content: none;
+  .distribution {
+    margin: 0;
+    &__descr {
+      padding: 0;
+      font-size: 1em;
+      position: absolute;
+      &:before {
+        content: none;
+      }
     }
   }
   .chart1__helpers {

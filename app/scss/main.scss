@@ -584,8 +584,7 @@ button.submit {
 @extend .h_indent,
         .max-width;
   &__descr {
-  @extend .f_regular,
-          .roboto_regular,
+  @extend .roboto_regular,
           .f_medium;
   padding: 0 15px;
   &:before {

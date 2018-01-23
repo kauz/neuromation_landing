@@ -686,7 +686,7 @@ i {
 .f_small {
   font-size: 0.8em; }
 
-.f_regular, .distribution__descr {
+.f_regular {
   font-size: 1em; }
 
 .f_medium, .header__left h2, .time .time__desc, .rate, .quote_text, .token__details .token__title, .bar_helper div, .distribution__descr, .eth_1, .eth_2, .eth_3, .eth_4, .roadmap__subtitle {

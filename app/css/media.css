@@ -154,10 +154,14 @@
     width: 900px;
     overflow: hidden;
     z-index: 0; }
-  .distribution__descr {
-    position: absolute; }
-    .distribution__descr:before {
-      content: none; }
+  .distribution {
+    margin: 0; }
+    .distribution__descr {
+      padding: 0;
+      font-size: 1em;
+      position: absolute; }
+      .distribution__descr:before {
+        content: none; }
   .chart1__helpers div {
     display: block; }
     .chart1__helpers div:nth-child(2) {
