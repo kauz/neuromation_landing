@@ -27,7 +27,16 @@
       min-height: 210px;
       margin: 10px; }
       .token__details .token div {
-        margin: 10px; } }
+        margin: 10px; }
+  .bar_helper_low:nth-child(4) {
+    bottom: -15px;
+    left: 60px; }
+  .bar_helper_low:nth-child(5) {
+    bottom: -15px;
+    left: 172px; }
+  .bar_helper_low:nth-child(6) {
+    bottom: -15px;
+    left: 287px; } }
 
 @media only screen and (min-width: 768px) {
   body {
@@ -166,6 +175,17 @@
     .chart2__helpers div:nth-child(5) {
       top: 70px;
       right: -260px; }
+  .bar_helper_low {
+    width: auto; }
+    .bar_helper_low:nth-child(4) {
+      bottom: -10px;
+      left: 43px; }
+    .bar_helper_low:nth-child(5) {
+      bottom: -10px;
+      left: 145px; }
+    .bar_helper_low:nth-child(6) {
+      bottom: -10px;
+      left: 267px; }
   .bagel {
     margin: 0;
     width: 100px;

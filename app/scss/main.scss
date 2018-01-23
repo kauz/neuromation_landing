@@ -566,6 +566,16 @@ button.submit {
   &:nth-child(2) {top: 62px; left: 106px}
   &:nth-child(3) {top: 141px; left: 181px}
 }
+.bar_helper_low {
+  @extend .absolute,
+          .uppercase,
+          .roboto_regular;
+  width: 56px;
+  text-align: center;
+  &:nth-child(4) {bottom: -10px; left: 40px}
+  &:nth-child(5) {bottom: -10px; left: 113px}
+  &:nth-child(6) {bottom: -10px; left: 181px}
+}
 
 .donut_path {
   display: none;

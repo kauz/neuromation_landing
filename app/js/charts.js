@@ -66,7 +66,8 @@ var myChart = new Chart(ctx, {
             display: false
         },
         legendCallback: function () {
-            return "<div class=\"bar_helper\"><div>+15%</div> in neurotokens</div> <div class=\"bar_helper\"><div>+10%</div> in neurotokens</div> <div class=\"bar_helper\"><div>+5%</div> in neurotokens</div>"
+            return "<div class=\"bar_helper\"><div>+15%</div> in neurotokens</div> <div class=\"bar_helper\"><div>+10%</div> in neurotokens</div> <div class=\"bar_helper\"><div>+5%</div> in neurotokens</div>"+
+                    "<div class=\"bar_helper_low\">First week</div> <div class=\"bar_helper_low\">Second week</div> <div class=\"bar_helper_low\">Third week</div>"
         }
     }
 });
