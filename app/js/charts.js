@@ -6,7 +6,6 @@ var ctw = document.getElementById("secondDoughnutChart").getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ["First week", "Second week", "Third week"],
         datasets: [{
             label: 'First week',
             data: [15],
