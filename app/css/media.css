@@ -1,7 +1,5 @@
 @charset "UTF-8";
 @media (min-width: 425px) {
-  .rate, .rate__block:last-child {
-    width: auto; }
   .rate__block:first-child {
     padding: 15px; }
   .rate__block:first-child:before {
@@ -128,6 +126,23 @@
       margin: 10px 10px; } }
 
 @media (min-width: 1024px) {
+  .rate {
+    font-size: 2em;
+    margin: 15px auto;
+    max-height: inherit; }
+    .rate__block {
+      min-height: 55px;
+      justify-content: center; }
+    .rate__block:first-child {
+      padding: 15px;
+      min-width: 100px; }
+    .rate__block:last-child {
+      padding: 15px;
+      min-width: 300px; }
+    .rate__block:first-child:before {
+      border-bottom: 85px solid #26a9cc; }
+    .rate__block:last-child:after {
+      border-top: 85px solid rgba(38, 168, 203, 0.1); }
   #doughnutChart, #secondDoughnutChart {
     position: relative;
     z-index: 1; }
@@ -308,6 +323,11 @@
       white-space: nowrap; } }
 
 @media (min-width: 1280px) {
+  main section {
+    min-height: 600px;
+    padding: 100px 0; }
+  div.title, div.subtitle {
+    margin: 80px 0; }
   .roadmap, .roadmap__wrapper {
     position: relative; }
   .head__content {
@@ -372,7 +392,9 @@
     .roadmap__dashed:before, .roadmap__dashed:after {
       display: block;
       content: '';
-      position: absolute; } }
+      position: absolute; }
+  .cross__cutting {
+    margin: 80px 0 40px 0; } }
 
 @media (min-width: 1440px) {
   .head__content {

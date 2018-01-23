@@ -1,7 +1,4 @@
 @media (min-width: 425px) {
-  .rate, .rate__block:last-child {
-    width: auto;
-  }
   .rate__block:first-child {
     padding: 15px;
   }
@@ -134,6 +131,32 @@
 
 }
 @media (min-width: 1024px) {
+  .rate {
+    font-size:2em;
+    margin: 15px auto;
+    max-height: inherit;
+    &__block {
+      min-height: 55px;
+      justify-content: center;
+    }
+
+    &__block:first-child {
+      padding: 15px;
+      min-width: 100px;
+    }
+    &__block:last-child {
+      padding: 15px;
+      min-width: 300px;
+    }
+    &__block:first-child:before {
+      border-bottom: 85px solid #26a9cc;
+    }
+    &__block:last-child:after {
+      border-top: 85px solid rgba(38, 168, 203, 0.1);
+    }
+
+  }
+
   #doughnutChart, #secondDoughnutChart {
     position: relative;
     z-index: 1;
@@ -307,6 +330,13 @@
 }
 
 @media (min-width:1280px) {
+  main section {
+    min-height: 600px;
+    padding: 100px 0;
+  }
+  div.title, div.subtitle {
+    margin: 80px 0;
+  }
   .roadmap, .roadmap__wrapper {
     position: relative;
   }
@@ -392,6 +422,9 @@
       content: '';
       position: absolute;
     }
+  }
+  .cross__cutting {
+    margin: 80px 0 40px 0;
   }
 
 }
