@@ -33,6 +33,7 @@
   .navigation__line {
     flex-flow: row wrap;
     justify-content: space-between;
+    align-items: center;
   }
   .head__block {
     padding: 100px 0 175px 0;
@@ -40,9 +41,11 @@
     background-size: cover;
   }
   .logo {
+    width: 250px;
+    height: 69px;
     margin-left: 20px;
   }
-  h1.title {
+  div.title {
     font-size:48px;
   }
 

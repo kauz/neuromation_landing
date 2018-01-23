@@ -118,7 +118,7 @@ table {
 .title {
   color: #062769; }
 
-.subTitle_c, h2.subtitle, .timing .timing__title, .token__details .token__rect, .roadmap_subtitle {
+.subTitle_c, div.subtitle, .timing .timing__title, .token__details .token__rect, .roadmap_subtitle {
   color: #26a9cc; }
 
 .headBlack_c, .block4, .timing, .token__back {
@@ -576,7 +576,7 @@ ul.navigation :hover {
 .nav-btn {
   width: 40px;
   height: 25px;
-  top: 10px;
+  top: 18px;
   right: 10px;
   margin-left: auto;
   transform: rotate(0deg);
@@ -632,10 +632,10 @@ body {
 .title, .subtitle {
   font-size: 32px; }
 
-h1.title {
+div.title {
   margin: 40px auto; }
 
-h2.subtitle {
+div.subtitle {
   margin: 20px auto; }
 
 a {
@@ -655,7 +655,7 @@ i {
 .dashed_line, nav.__open li:before, .rate__wrap:after {
   border-bottom: 1px dashed #26a9cc; }
 
-.flex, nav.__open, ul.navigation, section, .navigation__line, .head__content, .header__left, .header__right, .time .time__desc, .header_rate_wrap, .rate__wrap, .rate__block_h, .form__whitelist, .form__whitelist form, .rate, .rate__block:last-child, .partners, .block3 .intro, .timing, .token__details, .goals_section, .circle_wrap, .roadmap, .roadmap_wrapper {
+.flex, nav.__open, ul.navigation, section, .navigation__line, .head__content, .header__left, .header__right, .time .time__desc, .header_rate_wrap, .rate__wrap, .rate__block_h, .form__whitelist, .form__whitelist form, .rate, .rate__block:last-child, .partners, .timing, .token__details, .goals_section, .circle_wrap, .roadmap, .roadmap_wrapper {
   display: flex; }
 
 .flex-column, ul.navigation, section, .navigation__line, .head__content, .header__left, .header__right, .rate__wrap, .rate__block_h, .form__whitelist, .form__whitelist form, .timing, .token__details, .goals_section, .roadmap {
@@ -664,7 +664,7 @@ i {
 .flex-row, .time .time__desc, .header_rate_wrap, .partners, .roadmap_wrapper {
   flex-flow: row wrap; }
 
-.justify-center, section, .form__whitelist, .partners {
+.justify-center, section, .navigation__line, .form__whitelist, .partners {
   justify-content: center; }
 
 .justify-between, .time .time__desc, .rate__wrap {
@@ -676,7 +676,7 @@ i {
 .justify-end {
   justify-content: flex-end; }
 
-.flex-center, section, .navigation__line, .head__content, .header__left, .header__right, .rate__block_h, .form__whitelist, .form__whitelist form, .rate__block:last-child, .token__details, .goals_section {
+.flex-center, section, .head__content, .header__left, .header__right, .rate__block_h, .form__whitelist, .form__whitelist form, .rate__block:last-child, .token__details, .goals_section {
   align-items: center; }
 
 .curs_default, .slogan {
@@ -703,19 +703,19 @@ i {
 .f_super, .time #timer {
   font-size: 4em; }
 
-.h_indent, nav.__open li:before, .header__left h1, .header__left h2, .pre__sale, .white__paper, .form-text, .form-text-elem p:last-child, .quote_author, .quote_author a, .eth_1, .eth_2, .eth_3, .eth_4, .bagel, .cross__cutting p {
+.h_indent, nav.__open li:before, .header__left h1, .header__left h2, .pre__sale, .white__paper, .form-text, .form-text-elem p:last-child, .quote_author, .quote_author a, .intro_wrapper, .eth_1, .eth_2, .eth_3, .eth_4, .bagel, .cross__cutting p {
   margin: 20px 0; }
 
 .inline_b, .ribbon2 div, .rate__block, .token__per div, footer li, footer li:after {
   display: inline-block; }
 
-.relative, .rate__wrap, .form-text, .rate__block, .quote, .timing, .timing .timing__node, .token__distribution, .proceeds__distribution, .timing__bonus {
+.relative, .rate__wrap, .form-text, .rate__block, .quote, .frame_wrrapper, .timing, .timing .timing__node, .token__distribution, .proceeds__distribution, .timing__bonus {
   position: relative; }
 
-.absolute, .nav-btn, .nav-btn span, .rate__wrap:after, .rate__block:first-child:before, .rate__block:first-child:after, .rate__block:last-child:after, .pinetree:before, .pinetree:after, .timing:before, .timing .timing__node:before, .timing .timing__node:after, .bar_helper {
+.absolute, .nav-btn, .nav-btn span, .rate__wrap:after, .rate__block:first-child:before, .rate__block:first-child:after, .rate__block:last-child:after, .pinetree:before, .pinetree:after, .frame_wrrapper iframe, .timing:before, .timing .timing__node:before, .timing .timing__node:after, .bar_helper {
   position: absolute; }
 
-.uppercase, .title, .subtitle, h2.subtitle, .pre__sale, .rating, button.submit, .ribbon2 {
+.uppercase, .title, .subtitle, div.subtitle, .pre__sale, .rating, button.submit, .ribbon2 {
   text-transform: uppercase; }
 
 .underline {
@@ -724,13 +724,13 @@ i {
 .text-center, .title, .subtitle, .header__left h1, .rate__block_h div, .form__whitelist input, .ribbon2, .quote_wrapper, footer ul {
   text-align: center; }
 
-.max-width, section, .rate__wrap, .rate__wrap:after, .form__whitelist, .form__whitelist form, .ribbon2, .rate, .rate__block:last-child, .frame_wrrapper, .block3 .intro, .token__details .token__rect, .bagel .inner_circle_n, footer {
+.max-width, section, .dashed, .rate__wrap, .rate__wrap:after, .form__whitelist, .form__whitelist form, .ribbon2, .rate, .rate__block:last-child, .frame_wrrapper, .intro_wrapper, .token__details .token__rect, .bagel .inner_circle_n, footer {
   width: 100%; }
 
 .logo {
-  width: 250px;
-  height: 69px;
-  padding: 20px;
+  width: 130px;
+  padding: 30px;
+  margin-left: 10px;
   background: url(../images/logo_2.svg) no-repeat;
   background-position: center;
   background-size: 100%; }
@@ -757,9 +757,6 @@ i {
 
 .header__right {
   max-width: 690px; }
-
-.header__video {
-  width: 100%; }
 
 .dashed {
   display: block;
@@ -877,11 +874,17 @@ button.submit {
     margin: 20px; }
 
 .frame_wrrapper {
-  max-width: 601px; }
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden; }
+  .frame_wrrapper iframe {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
 
-.block3 .intro {
-  flex-grow: 2;
-  margin: 0 0 40px; }
+.intro_wrapper {
+  max-width: 605px; }
 
 .block4 h2 {
   margin: 60px auto; }
