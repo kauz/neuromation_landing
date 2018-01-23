@@ -882,7 +882,9 @@ button.submit {
 
 .partners {
   margin: 60px 0 100px; }
-  .partners i {
+  .partners__link {
+    padding: 20px 0; }
+  .partners__logo {
     margin: 20px; }
 
 .frame_wrrapper {

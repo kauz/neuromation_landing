@@ -398,7 +398,10 @@ button.submit {
   .flex-row,
   .justify-center;
   margin: 60px 0 100px;
-  i {
+  &__link {
+    padding: 20px 0;
+  }
+  &__logo {
     margin: 20px;
   }
 }
