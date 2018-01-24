@@ -1,3 +1,10 @@
+/* $ gulp :
+1. buld:
+            rmdir /dist, [sass, useref
+
+
+
+    */
 // Load in dependencies
 var gulp = require('gulp');
 var sass = require('gulp-sass');
@@ -16,26 +23,35 @@ var merge = require('merge-stream');
 var spritesmith = require('gulp.spritesmith');
 
 
-gulp.task('default', function (callback) {
-  runSequence(['sass','browserSync', 'watch'],
+//Default task: build+watch-sync
+gulp.task('default', ['build'], function (callback) {
+  runSequence(['browserSync', 'watch'],
     callback
   )
 });
 
 
+//Manually build app
 gulp.task('build', function (callback) {
-  runSequence('clean:dist', 
-    ['sass', 'useref', 'images', 'fonts'], 'autoprefixer',
+  runSequence('clean:dist',
+    ['useref', 'images'], 'autoprefixer',
     callback
   )
 });
 
+
+//Watch for changes
 gulp.task('watch', ['browserSync', 'sass'], function (){
-  gulp.watch('app/scss/**/*.scss', ['sass']);
-  gulp.watch('app/*.html', browserSync.reload); 
-  gulp.watch('app/js/**/*.js', browserSync.reload);  
+    gulp.watch('app/*.html', browserSync.reload);
+    gulp.watch('app/scss/**/*.scss', ['sass']);
+    gulp.watch('app/js/**/*.js', browserSync.reload);
+    gulp.watch('app/vendor/**/*.js', browserSync.reload);
+    gulp.watch('app/fonts/**/*', browserSync.reload);
+    gulp.watch('app/images/**/*', ['build', browserSync.reload]);
 });
 
+
+//Combine images from /icons and /logos to sprites
 gulp.task('sprite', function () {
     // Generate spritesheets
     var iconSpriteData = gulp.src('app/images/icons/*.*').pipe(spritesmith({
@@ -73,6 +89,7 @@ gulp.task('sprite', function () {
 });
 
 
+//Create vendor prefixes at dist/css
 gulp.task('autoprefixer', function() {
     return gulp.src('dist/css/*.css')
         .pipe(autoprefixer({
@@ -82,17 +99,33 @@ gulp.task('autoprefixer', function() {
         .pipe(gulp.dest('dist/css'))
 });
 
+
+//Convert sass to css, move to dist
 gulp.task('sass', function() {
   return gulp.src('app/scss/**/*.scss') // Gets all files ending with .scss in app/scss and children dirs
     .pipe(sass()) // Converts Sass to CSS with gulp-sass
-    .pipe(gulp.dest('app/css'))
+    .pipe(gulp.dest('dist/css'))
     .pipe(browserSync.reload({
       stream: true
     }))
 });
 
-gulp.task('useref', function(){
-  return gulp.src('app/*.html')
+//Move html to dist
+gulp.task('html', function(){
+    return gulp.src('app/*.html')
+        .pipe(gulp.dest('dist'))
+});
+
+//Move js to dist
+gulp.task('js', function(){
+    return gulp.src('app/**/*.js')
+        .pipe(gulp.dest('dist'))
+});
+
+
+//Minify css & js, then move to dist
+gulp.task('useref', ['html', 'sass', 'js', 'fonts'],  function(){
+  return gulp.src('dist/*.html')
     .pipe(useref())
     .pipe(gulpIf('*.js', uglify()))
     // Minifies only if it's a CSS file
@@ -100,7 +133,9 @@ gulp.task('useref', function(){
     .pipe(gulp.dest('dist'))
 });
 
-gulp.task('images', function(){
+
+//Minify images and move to dist
+gulp.task('images', ['sprite'], function(){
   return gulp.src('app/images/**/*.+(png|jpg|jpeg|gif|svg)')
   // Caching images that ran through imagemin
   .pipe(cache(imagemin({
@@ -109,23 +144,31 @@ gulp.task('images', function(){
   .pipe(gulp.dest('dist/images'))
 });
 
+
+//Move fonts to dist
 gulp.task('fonts', function() {
   return gulp.src('app/fonts/**/*')
   .pipe(gulp.dest('dist/fonts'))
 });
 
+
+//Clean dist
 gulp.task('clean:dist', function() {
   return del.sync('dist');
 });
 
+
+//Clear cache
 gulp.task('cache:clear', function (callback) {
 return cache.clearAll(callback)
 });
 
+
+//Sync browser
 gulp.task('browserSync', function() {
       browserSync.init({
 	  server: {
-				baseDir: 'app'
+				baseDir: 'dist'
 			},
           open: 'external',
           host: 'neuromation.dev',
